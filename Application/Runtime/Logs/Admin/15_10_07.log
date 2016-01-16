@@ -1,0 +1,141 @@
+[ 2015-10-07T12:29:23+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.001000s ]
+
+[ 2015-10-07T12:29:25+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.001000s ]
+
+[ 2015-10-07T12:29:28+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.001000s ]
+
+[ 2015-10-07T12:56:54+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.030002s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 2 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.015000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=2 )  [ RunTime:0.000000s ]
+
+[ 2015-10-07T13:03:41+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.001000s ]
+
+[ 2015-10-07T13:16:29+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:18:39+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:23:25+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:28:37+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:29:08+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:29:41+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:30:28+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.069004s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 2 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.015001s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=2 )  [ RunTime:0.000000s ]
+
+[ 2015-10-07T13:30:47+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000000s ]
+
+[ 2015-10-07T13:30:48+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:31:11+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000000s ]
+
+[ 2015-10-07T13:31:14+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.001001s ]
+
+[ 2015-10-07T13:31:19+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:56:09+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T13:56:09+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T14:01:23+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T14:16:02+08:00 ] 127.0.0.1 /index.php/Admin/Channel/edit/id/7.html
+ERR: Think\Model:dataList方法不存在！
+
+[ 2015-10-07T14:16:14+08:00 ] 127.0.0.1 /index.php/Admin/Channel/edit/id/7.html
+ERR: Think\Model:dataList方法不存在！
+
+[ 2015-10-07T14:55:31+08:00 ] 127.0.0.1 /index.php/Admin/News/Index?cid=268
+ERR: 无法加载控制器:News
+
+[ 2015-10-07T14:55:45+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.001000s ]
+
+[ 2015-10-07T14:55:47+08:00 ] 127.0.0.1 /index.php/Admin/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.001000s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.001000s ]
+

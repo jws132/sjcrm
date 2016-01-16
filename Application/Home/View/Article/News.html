@@ -1,0 +1,42 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="page-ban" style=" background:url('__IMG__/news.png') #4AA1CC no-repeat center top;">
+  <div class="container">
+      <h1>{$channelInfo.title}</h1>
+      <p>{$channelInfo.name}</p>
+  </div>  
+</div>
+<div class="con-bg pt30">
+    <div class="container">
+        <ul class="nav_news_list clearfix">
+            <volist name="channel" id="vo">   
+                <li>
+                    <a href="__MODULE__/{$vo.model}/index/id/{$vo.id}" class="<if condition="$vo['id'] == $_GET['id']">cursor<else/> </if>" >{$vo.title}</a>
+                </li>
+            </volist>
+        </ul>
+        <div class="news_list  clearfix">         
+            <volist name="list" id="vo">           	
+             <ul>
+                <li>
+                    <dl>
+                        <dt><b>{$vo.createtime|date='d',###}</b> <br> <span class="english">{$vo.createtime|date='m',###}月</span></dt>
+                        <dd>
+                            <p class="tit"><a href="__MODULE__/article/Content/id/{$vo.id}" title="{$vo.title}">{$vo.title}</a></p>
+                            <p class="date">{$vo.createtime|date='Y-m-d',###} </p>
+                            <p class="txt">
+                                {$vo.description}
+                            </p>
+                            <p class="more">
+                            	<a href="__MODULE__/article/Content/id/{$vo.id}">阅读全文</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+             </ul>
+            </volist>
+            <div class="page">{$page}</div>
+        </div>
+    </div>
+</div>    
+</block>

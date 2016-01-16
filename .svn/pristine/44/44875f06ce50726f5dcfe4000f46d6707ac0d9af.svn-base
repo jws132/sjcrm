@@ -1,0 +1,59 @@
+<extend name="Public/base"/>
+<block name="body">
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+        window.UEDITOR_HOME_URL='__PUBLIC__/ueditor/';
+        window.onload=function(){
+            window.UEDITOR_CONFIG.imageUrl = '{:U('Editor')}';
+            window.UEDITOR_CONFIG.imagePath = '__ROOT__/Uploads/Editor/';    
+        }
+</script>
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+                 <a class="btn btn-mini"  href="javascript:history.go(-1);">返回</a>
+             </div>
+           </div>
+          <div class="widget-content ">
+                    <form class="form-horizontal" action="{:U('Edit')}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">标题</label>
+                                        <div class="controls">
+                                            {$info.title|default='无'}
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">名称</label>
+                                        <div class="controls">
+                                             {$info.name|default='无'}
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">电话</label>
+                                        <div class="controls">
+                                             {$info.phone|default='无'}
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">留言内容</label>
+                                        <div class="controls">
+                                            {$info.conter|default='无'}
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">回复内容</label>
+                                        <div class="controls">
+                                            <textarea name="hf" id="conter" style="height:100px; width:300px;">{$info.hf|default='无'}</textarea>
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <input type="hidden" name="id" value="{$info.id|default=''}">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+        </div>
+</block>

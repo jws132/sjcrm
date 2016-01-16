@@ -1,0 +1,154 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>北京胜杰通华软件技术有限公司</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="keywords" content="北京胜杰通华软件技术有限公司" />
+<meta name="Description" content="北京胜杰通华软件技术有限公司" />
+<link rel="stylesheet" href="/Public/Home/css/base.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+</head>
+<body>
+<header>
+    <div class="navbar clearfix pb20">
+    	<a href="/" class="logo"><img src="/Public/Home/img/logo.png" border="0" alt="" width="250" /></a>
+    	<ul class="pt10">
+    		<li><a href="/">首页</a></li>
+    		<li><a href="/Index/about.html">公司简介</a></li>
+    		<li><a href="/Index/cases.html">解决方案</a></li>
+    		<li><a href="/Index/pro.html">产品中心</a></li>
+    		<li><a href="#">代理产品</a></li>
+    		<li class="no"><a href="/Index/support.html">技术服务</a></li>
+    	</ul>
+    </div>
+</header>
+
+<div class="clearfix b-index mb15">
+  <ul>
+     <li style=" background:url('http://www.cloudsharetech.com/templets/yx/img/slider/focus.jpg') #3083eb no-repeat center top;"><a href="#"></a></li>
+     <li style=" background:url('http://www.cloudsharetech.com/templets/yx/img/slider/yuncrm.jpg') #9FBBC7 no-repeat center top;"><a href="#"></a></li>
+     <li style=" background:url('http://www.cloudsharetech.com/templets/yx/img/slider/jjfa.jpg') #8CC63E no-repeat center top;"><a href="#"></a></li>
+  </ul>
+   <ol>
+      <li class="current"></li>
+      <li></li>
+      <li></li>
+   </ol>
+</div>
+
+<div class="pro-list clearfix pt20 pb20">
+	<ul>
+		<li>
+			<img src="/Public/Home/img/pro-1.png" border="0" />
+			<h4>学校实训平台系统</h4>
+			<p>行业概况分析 各个民办及公办大学，为什么建立招</p>
+		</li>
+		<li>
+			<img src="/Public/Home/img/pro-2.png" border="0" />
+			<h4>中小企业呼叫中心一体</h4>
+			<p>胜杰通华一体机是集呼叫中心软件、硬件，呼叫中</p>
+		</li>
+		<li>
+			<img src="/Public/Home/img/pro-3.png" border="0" />
+			<h4>呼叫中心客服平台系统</h4>
+			<p>行业概况分析 各个民办及公办大学，为什么建立招</p>
+		</li>
+		<li>
+			<img src="/Public/Home/img/pro-4.png" border="0" />
+			<h4>呼叫中心客服平台系统</h4>
+			<p>呼叫中心客服系统包含：电话咨询、投诉、自动外呼接</p>
+		</li>
+		<li>
+			<img src="/Public/Home/img/pro-5.png" border="0" />
+			<h4>居家养老客服平台系统</h4>
+			<p>居家养老服务信息平台 建设项目是以居家养老服务和</p>
+		</li>
+		<li>
+			<img src="/Public/Home/img/pro-6.png" border="0" />
+			<h4>学校实训平台系统</h4>
+			<p>行业概况分析 各个民办及公办大学，为什么建立招</p>
+		</li>		
+		<li>
+			<img src="/Public/Home/img/pro-7.png" border="0" />
+			<h4>家政服务网络中心系统</h4>
+			<p>“家政服务网络中心“，通过电话、网络等信息手段，</p>
+		</li>
+		<li>
+			<img src="/Public/Home/img/pro-8.png" border="0" />
+			<h4>学校实训平台系统</h4>
+			<p>行业概况分析 各个民办及公办大学，为什么建立招</p>
+		</li>
+	</ul>
+</div>
+
+<div class="con-bg">
+	<div class="container">
+		<h2 class="title">我们的客户</h2>
+		<div class="case-title">
+		    <ul>
+		    	<li>作为全球首个互联网手机品牌，其推出的MIUI多年来一直赢得小米手机用户及海量刷机用户的厚爱，为让用户体验更好的通话服务，MIUI嵌入
+云通讯SDK，让"为发烧而生"延续。<p class="tr">-----百合网：中国婚恋交友第一社区</p></li>
+		    </ul>
+			<span class="case_mark1"></span>
+			<span class="case_mark2"></span>
+		</div>
+		<ul class="case-list clearfix pb20 pt15">
+			<li><img src="/Public/Home/img/case-1.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-2.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-3.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-4.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-5.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-6.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-7.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-8.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-9.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-10.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-3.png" border="0" /></li>
+			<li><img src="/Public/Home/img/case-1.png" border="0" /></li>
+		</ul>
+
+	</div>
+</div>
+
+<div class="container pt30 clearfix">
+	<div class="fl w550 news_list">
+		<h3>新闻中心</h3>
+		<ul class="pr30">
+            <li><a href="#" target="_blank">流量分发会成为下一个移动入口吗？</a><span>今日头条</span></li>
+	        <li><a href="#" target="_blank">容联融合通信开放平台 “互联网+通信”开启企业通讯新时代</a><span>百度百家</span></li>
+	        <li><a href="#" target="_blank">新浪乐居联袂容联，以多款语音通讯产品升级房地产O2O新体验</a><span>搜狐</span></li>
+	        <li><a href="#" target="_blank">容联携 “双向回拨”，助力房地产企业防跳单</a><span>51CTO</span></li>
+	        <li><a href="#" target="_blank">新浪乐居联袂容联，以多款语音通讯产品升级房地产O2O新体验</a><span>搜狐</span></li>
+	        <li><a href="#" target="_blank">容联携 “双向回拨”，助力房地产企业防跳单</a><span>51CTO</span></li>
+	        <li><a href="#" target="_blank">易到用车再度联袂容联云通讯，流量红包雨为粉丝“解暑</a><span>北青网</span></li>
+	    </ul>
+	</div>
+	<div class="fr w550 tc"><img src="/Public/Home/img/new-r.jpg" border="0" /></div>
+</div>
+<div class="container pt20 clearfix">
+	<div class="dotted_line clearfix"></div>
+	<div class="fl w650 tc">
+	   <img src="/Public/Home/img/new-b.png" border="0" />
+	</div>
+	<div class="fr w400 tc pb15">
+		<h1 style="font-size:30px;" class="pt70 pb50">赶紧申请试用吧？还等什么</h1>
+<a href="/" class="btn pt10 pr50 pb10 pl50 ">立即申请试用</a>
+	</div>
+</div>
+
+<div class="askbox">
+    有疑问或想了解更多，请咨询：400-000-0000
+</div>
+<div class="con-bg">
+    <ul class="container clearfix pt30 pb30">
+        <li class="fl w300"><img src="/Public/Home/img/logo.png" border="0" width="300"></li>
+        <li class="fr w750 f14 lh30">
+        © Copyright 2015 胜杰软件 All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;北京胜杰通华软件技术有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备 09089591号-1 </br>地址：北京市南三环中路71号扑满山大厦3栋9层&nbsp;&nbsp;&nbsp;&nbsp;传真：010-87653153 
+        </li>   
+    </ul>
+</div>
+<script src="/Public/Home/js/jquery-1.7.2.min.js"></script> 
+<script src="/Public/Home/js/scrolltop.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="con-bg">
+     <div class="container clearfix">
+	     <div class="assets mt20 mb20 pl15 pr15 pt15 pb15">
+	     	  <ul class="lh40">
+	     	  	  <volist name="channel" id="vo">
+	     	        <li><a href="__MODULE__/{$vo.model}/index/id/{$vo.id}">{$vo.title}</a></li>
+	     	      </volist>
+	     	  </ul>
+	     </div>
+	     <div class="fr w850 mt20 mb20">
+	       <h3 class="n-title">{$channelInfo.title}</h3>
+	       <div class="pt15 pb15 pl15 pr15 lh30 f16" style="color:#707070">
+	       	　  {$channelInfo.content|htmlspecialchars_decode}
+
+	       </div>
+
+	      </div>
+     </div>
+</div>
+</block>

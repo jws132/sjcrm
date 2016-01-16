@@ -1,0 +1,81 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  <div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">后台首页</a></li>
+    <li><a href="#">角色管理</a></li>
+    <li><a href="#">权限设置</a></li>
+    </ul>
+    </div>
+ <form action="{:U('role')}" method="post" id="addRole">   
+    <div class="rightinfo">
+    
+    <div class="tools">
+    
+      <ul class="toolbar">
+        <li onclick = "addRole();"><span><img src="__IMG__/t01.png" /></span>保存权限</li>
+      </ul>
+        
+        
+        <ul class="toolbar1">
+        <li><span><img src="images/t05.png" /></span>设置</li>
+        </ul>
+    
+    </div>
+
+
+     <table class="tablelist">
+          <thead>
+            <tr>
+              <th width="200">菜单</th>
+              <th width="200">方法</th>
+              <th>功能</th>
+            </tr>
+          </thead>
+          <tbody>
+            <volist name="menus" id="vo">
+            <tr>
+              <td><input type="checkbox" name="role[]" value="{$vo.id}_2" onclick="checkAll(this,'purviewid[]')" <if condition="$vo['access']">checked="checked"</if> >&nbsp;{$vo.title}</td>
+              <td></td>
+              <td></td>
+            </tr>
+             <volist name="vo.child" id="c">
+                <tr>
+                  <td></td>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="role[]" value="{$c.id}_3" onclick="checkAll(this,'purviewid[]')" <if condition="$c['access']">checked="checked"</if>>&nbsp;{$c.title}</td>
+                  <td></td>
+                </tr>
+                <volist name="c.child" id="f">
+                    <tr>
+                        <td></td>
+                       <td></td>
+                      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="role[]" value="{$f.id}_3" onclick="checkAll(this,'purviewid[]')" <if condition="$f['access']">checked="checked"</if>>&nbsp;{$f.title}</td>
+                    </tr>
+                  </volist>
+              </volist>
+            </volist>
+          </tbody>
+        </table>
+       <input type="hidden" name="role_id" value="{$role_id}">
+       <input type="hidden" name="role['node_id']" value="1_1" >
+
+    </div>
+    </form>
+  <script type="text/javascript">
+  function addRole(){
+    document.getElementById("addRole").submit();
+  }
+    $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</body>
+</html>

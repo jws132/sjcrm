@@ -1,0 +1,26 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="main clearfix pt15">	 
+	 	<div class="fl w700">
+	 	    <div class="clearfix mb20 f12">{$Think.lang.T_YPP}: {$Think.lang.T_HOME} >> <empty name="id">{$Think.lang.T_NEWS}<else/>{$Think.lang.T_NEWS} >> {$id|news_list_type}</empty></div>
+	 		<div class="col-title"> <empty name="id">{$Think.lang.T_NEWS}<else/>{$id|news_list_type}</empty></div>
+            <ul class="news_list pt10 pb10">
+                <volist name="list" id="vo">
+                    <li class="clearfix"><a href="/Index/ndef/id/{$vo.id}.html" target="_blank" class="fl" title="{$vo.title}">{$vo.title}</a><font>{$vo.create_time|date='Y-m-d',###}</font></li>
+                </volist>
+            </ul>
+             <div class="page">
+            {$page}
+            </div>
+	 	</div>
+        <div class="fr w290 pr">
+	 	    <div class="a-m-r">{$Think.lang.T_NEWS}</div>
+	 		<div class="w250 w-a-bj pt70 ml10 p10">
+	 		   <ul class="about-meun pt5 mb10 f12">
+	 		        <volist name="Think.config.NEWS_LIST_TYPE" id="newsType"><li><a href="/Index/news/pid/{$key}.html">{$newsType}</a></li> </volist>
+	 		   </ul>
+	 		   <include file="Public/net" />
+	 		</div>
+	 	</div>  
+</div>
+</block>

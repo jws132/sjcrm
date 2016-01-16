@@ -1,0 +1,53 @@
+<?php
+//000000000000a:27:{i:0;a:12:{s:2:"id";s:1:"1";s:4:"name";s:14:"WEB_SITE_TITLE";s:4:"type";s:1:"1";s:5:"title";s:12:"网站标题";s:5:"group";s:1:"1";s:5:"extra";s:0:"";s:6:"remark";s:30:"网站标题前台显示标题";s:11:"create_time";s:10:"1378898976";s:11:"update_time";s:10:"1379235274";s:6:"status";s:1:"1";s:5:"value";s:26:"OneThink内容管理框架";s:4:"sort";s:1:"0";}i:1;a:12:{s:2:"id";s:1:"2";s:4:"name";s:20:"WEB_SITE_DESCRIPTION";s:4:"type";s:1:"2";s:5:"title";s:12:"网站描述";s:5:"group";s:1:"1";s:5:"extra";s:0:"";s:6:"remark";s:24:"网站搜索引擎描述";s:11:"create_time";s:10:"1378898976";s:11:"update_time";s:10:"1379235841";s:6:"status";s:1:"1";s:5:"value";s:26:"OneThink内容管理框架";s:4:"sort";s:1:"1";}i:2;a:12:{s:2:"id";s:1:"3";s:4:"name";s:16:"WEB_SITE_KEYWORD";s:4:"type";s:1:"2";s:5:"title";s:15:"网站关键字";s:5:"group";s:1:"1";s:5:"extra";s:0:"";s:6:"remark";s:27:"网站搜索引擎关键字";s:11:"create_time";s:10:"1378898976";s:11:"update_time";s:10:"1381390100";s:6:"status";s:1:"1";s:5:"value";s:17:"ThinkPHP,OneThink";s:4:"sort";s:1:"8";}i:3;a:12:{s:2:"id";s:1:"4";s:4:"name";s:14:"WEB_SITE_CLOSE";s:4:"type";s:1:"4";s:5:"title";s:12:"关闭站点";s:5:"group";s:1:"1";s:5:"extra";s:17:"0:关闭,1:开启";s:6:"remark";s:69:"站点关闭后其他用户不能访问，管理员可以正常访问";s:11:"create_time";s:10:"1378898976";s:11:"update_time";s:10:"1379235296";s:6:"status";s:1:"1";s:5:"value";s:1:"1";s:4:"sort";s:1:"1";}i:4;a:12:{s:2:"id";s:1:"9";s:4:"name";s:16:"CONFIG_TYPE_LIST";s:4:"type";s:1:"3";s:5:"title";s:18:"配置类型列表";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:48:"主要用于数据解析和页面表单的生成";s:11:"create_time";s:10:"1378898976";s:11:"update_time";s:10:"1379235348";s:6:"status";s:1:"1";s:5:"value";s:48:"0:数字
+1:字符
+2:文本
+3:数组
+4:枚举";s:4:"sort";s:1:"2";}i:5;a:12:{s:2:"id";s:2:"10";s:4:"name";s:12:"WEB_SITE_ICP";s:4:"type";s:1:"1";s:5:"title";s:15:"网站备案号";s:5:"group";s:1:"1";s:5:"extra";s:0:"";s:6:"remark";s:70:"设置在网站底部显示的备案号，如“沪ICP备12007941号-2";s:11:"create_time";s:10:"1378900335";s:11:"update_time";s:10:"1379235859";s:6:"status";s:1:"1";s:5:"value";s:0:"";s:4:"sort";s:1:"9";}i:6;a:12:{s:2:"id";s:2:"11";s:4:"name";s:17:"DOCUMENT_POSITION";s:4:"type";s:1:"3";s:5:"title";s:15:"文档推荐位";s:5:"group";s:1:"2";s:5:"extra";s:0:"";s:6:"remark";s:57:"文档推荐位，推荐到多个位置KEY值相加即可";s:11:"create_time";s:10:"1379053380";s:11:"update_time";s:10:"1379235329";s:6:"status";s:1:"1";s:5:"value";s:52:"1:列表页推荐
+2:频道页推荐
+4:首页推荐";s:4:"sort";s:1:"3";}i:7;a:12:{s:2:"id";s:2:"12";s:4:"name";s:16:"DOCUMENT_DISPLAY";s:4:"type";s:1:"3";s:5:"title";s:15:"文档可见性";s:5:"group";s:1:"2";s:5:"extra";s:0:"";s:6:"remark";s:57:"文章可见性仅影响前台显示，后台不收影响";s:11:"create_time";s:10:"1379056370";s:11:"update_time";s:10:"1379235322";s:6:"status";s:1:"1";s:5:"value";s:64:"0:所有人可见
+1:仅注册会员可见
+2:仅管理员可见";s:4:"sort";s:1:"4";}i:8;a:12:{s:2:"id";s:2:"13";s:4:"name";s:11:"COLOR_STYLE";s:4:"type";s:1:"4";s:5:"title";s:12:"后台色系";s:5:"group";s:1:"1";s:5:"extra";s:42:"default_color:默认
+blue_color:紫罗兰";s:6:"remark";s:18:"后台颜色风格";s:11:"create_time";s:10:"1379122533";s:11:"update_time";s:10:"1379235904";s:6:"status";s:1:"1";s:5:"value";s:13:"default_color";s:4:"sort";s:2:"10";}i:9;a:12:{s:2:"id";s:2:"20";s:4:"name";s:17:"CONFIG_GROUP_LIST";s:4:"type";s:1:"3";s:5:"title";s:12:"配置分组";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:12:"配置分组";s:11:"create_time";s:10:"1379228036";s:11:"update_time";s:10:"1384418383";s:6:"status";s:1:"1";s:5:"value";s:38:"1:基本
+2:内容
+3:用户
+4:系统";s:4:"sort";s:1:"4";}i:10;a:12:{s:2:"id";s:2:"21";s:4:"name";s:10:"HOOKS_TYPE";s:4:"type";s:1:"3";s:5:"title";s:15:"钩子的类型";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:62:"类型 1-用于扩展显示内容，2-用于扩展业务处理";s:11:"create_time";s:10:"1379313397";s:11:"update_time";s:10:"1379313407";s:6:"status";s:1:"1";s:5:"value";s:21:"1:视图
+2:控制器";s:4:"sort";s:1:"6";}i:11;a:12:{s:2:"id";s:2:"22";s:4:"name";s:11:"AUTH_CONFIG";s:4:"type";s:1:"3";s:5:"title";s:10:"Auth配置";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:32:"自定义Auth.class.php类配置";s:11:"create_time";s:10:"1379409310";s:11:"update_time";s:10:"1379409564";s:6:"status";s:1:"1";s:5:"value";s:22:"AUTH_ON:1
+AUTH_TYPE:2";s:4:"sort";s:1:"8";}i:12;a:12:{s:2:"id";s:2:"23";s:4:"name";s:13:"OPEN_DRAFTBOX";s:4:"type";s:1:"4";s:5:"title";s:24:"是否开启草稿功能";s:5:"group";s:1:"2";s:5:"extra";s:44:"0:关闭草稿功能
+1:开启草稿功能
+";s:6:"remark";s:36:"新增文章时的草稿功能配置";s:11:"create_time";s:10:"1379484332";s:11:"update_time";s:10:"1379484591";s:6:"status";s:1:"1";s:5:"value";s:1:"1";s:4:"sort";s:1:"1";}i:13;a:12:{s:2:"id";s:2:"24";s:4:"name";s:23:"DRAFT_AOTOSAVE_INTERVAL";s:4:"type";s:1:"0";s:5:"title";s:24:"自动保存草稿时间";s:5:"group";s:1:"2";s:5:"extra";s:0:"";s:6:"remark";s:48:"自动保存草稿的时间间隔，单位：秒";s:11:"create_time";s:10:"1379484574";s:11:"update_time";s:10:"1386143323";s:6:"status";s:1:"1";s:5:"value";s:2:"60";s:4:"sort";s:1:"2";}i:14;a:12:{s:2:"id";s:2:"25";s:4:"name";s:9:"LIST_ROWS";s:4:"type";s:1:"0";s:5:"title";s:21:"后台每页记录数";s:5:"group";s:1:"2";s:5:"extra";s:0:"";s:6:"remark";s:33:"后台数据每页显示记录数";s:11:"create_time";s:10:"1379503896";s:11:"update_time";s:10:"1380427745";s:6:"status";s:1:"1";s:5:"value";s:2:"10";s:4:"sort";s:2:"10";}i:15;a:12:{s:2:"id";s:2:"26";s:4:"name";s:19:"USER_ALLOW_REGISTER";s:4:"type";s:1:"4";s:5:"title";s:24:"是否允许用户注册";s:5:"group";s:1:"3";s:5:"extra";s:30:"0:关闭注册
+1:允许注册";s:6:"remark";s:24:"是否开放用户注册";s:11:"create_time";s:10:"1379504487";s:11:"update_time";s:10:"1379504580";s:6:"status";s:1:"1";s:5:"value";s:1:"1";s:4:"sort";s:1:"3";}i:16;a:12:{s:2:"id";s:2:"27";s:4:"name";s:16:"CODEMIRROR_THEME";s:4:"type";s:1:"4";s:5:"title";s:31:"预览插件的CodeMirror主题";s:5:"group";s:1:"4";s:5:"extra";s:252:"3024-day:3024 day
+3024-night:3024 night
+ambiance:ambiance
+base16-dark:base16 dark
+base16-light:base16 light
+blackboard:blackboard
+cobalt:cobalt
+eclipse:eclipse
+elegant:elegant
+erlang-dark:erlang-dark
+lesser-dark:lesser-dark
+midnight:midnight";s:6:"remark";s:25:"详情见CodeMirror官网";s:11:"create_time";s:10:"1379814385";s:11:"update_time";s:10:"1384740813";s:6:"status";s:1:"1";s:5:"value";s:8:"ambiance";s:4:"sort";s:1:"3";}i:17;a:12:{s:2:"id";s:2:"28";s:4:"name";s:16:"DATA_BACKUP_PATH";s:4:"type";s:1:"1";s:5:"title";s:24:"数据库备份根路径";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:24:"路径必须以 / 结尾";s:11:"create_time";s:10:"1381482411";s:11:"update_time";s:10:"1381482411";s:6:"status";s:1:"1";s:5:"value";s:7:"./Data/";s:4:"sort";s:1:"5";}i:18;a:12:{s:2:"id";s:2:"29";s:4:"name";s:21:"DATA_BACKUP_PART_SIZE";s:4:"type";s:1:"0";s:5:"title";s:24:"数据库备份卷大小";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:79:"该值用于限制压缩后的分卷最大长度。单位：B；建议设置20M";s:11:"create_time";s:10:"1381482488";s:11:"update_time";s:10:"1381729564";s:6:"status";s:1:"1";s:5:"value";s:8:"20971520";s:4:"sort";s:1:"7";}i:19;a:12:{s:2:"id";s:2:"30";s:4:"name";s:20:"DATA_BACKUP_COMPRESS";s:4:"type";s:1:"4";s:5:"title";s:39:"数据库备份文件是否启用压缩";s:5:"group";s:1:"4";s:5:"extra";s:27:"0:不压缩
+1:启用压缩";s:6:"remark";s:59:"压缩备份文件需要PHP环境支持gzopen,gzwrite函数";s:11:"create_time";s:10:"1381713345";s:11:"update_time";s:10:"1381729544";s:6:"status";s:1:"1";s:5:"value";s:1:"1";s:4:"sort";s:1:"9";}i:20;a:12:{s:2:"id";s:2:"31";s:4:"name";s:26:"DATA_BACKUP_COMPRESS_LEVEL";s:4:"type";s:1:"4";s:5:"title";s:33:"数据库备份文件压缩级别";s:5:"group";s:1:"4";s:5:"extra";s:28:"1:普通
+4:一般
+9:最高";s:6:"remark";s:72:"数据库备份文件的压缩级别，该配置在开启压缩时生效";s:11:"create_time";s:10:"1381713408";s:11:"update_time";s:10:"1381713408";s:6:"status";s:1:"1";s:5:"value";s:1:"9";s:4:"sort";s:2:"10";}i:21;a:12:{s:2:"id";s:2:"32";s:4:"name";s:12:"DEVELOP_MODE";s:4:"type";s:1:"4";s:5:"title";s:21:"开启开发者模式";s:5:"group";s:1:"4";s:5:"extra";s:18:"0:关闭
+1:开启";s:6:"remark";s:27:"是否开启开发者模式";s:11:"create_time";s:10:"1383105995";s:11:"update_time";s:10:"1383291877";s:6:"status";s:1:"1";s:5:"value";s:1:"0";s:4:"sort";s:2:"11";}i:22;a:12:{s:2:"id";s:2:"33";s:4:"name";s:11:"ALLOW_VISIT";s:4:"type";s:1:"3";s:5:"title";s:24:"不受限控制器方法";s:5:"group";s:1:"0";s:5:"extra";s:0:"";s:6:"remark";s:0:"";s:11:"create_time";s:10:"1386644047";s:11:"update_time";s:10:"1386644741";s:6:"status";s:1:"1";s:5:"value";s:220:"0:article/draftbox
+1:article/mydocument
+2:Category/tree
+3:Index/verify
+4:file/upload
+5:file/download
+6:user/updatePassword
+7:user/updateNickname
+8:user/submitPassword
+9:user/submitNickname
+10:file/uploadpicture";s:4:"sort";s:1:"0";}i:23;a:12:{s:2:"id";s:2:"34";s:4:"name";s:10:"DENY_VISIT";s:4:"type";s:1:"3";s:5:"title";s:27:"超管专限控制器方法";s:5:"group";s:1:"0";s:5:"extra";s:0:"";s:6:"remark";s:45:"仅超级管理员可访问的控制器方法";s:11:"create_time";s:10:"1386644141";s:11:"update_time";s:10:"1386644659";s:6:"status";s:1:"1";s:5:"value";s:159:"0:Addons/addhook
+1:Addons/edithook
+2:Addons/delhook
+3:Addons/updateHook
+4:Admin/getMenus
+5:Admin/recordList
+6:AuthManager/updateRules
+7:AuthManager/tree";s:4:"sort";s:1:"0";}i:24;a:12:{s:2:"id";s:2:"35";s:4:"name";s:15:"REPLY_LIST_ROWS";s:4:"type";s:1:"0";s:5:"title";s:24:"回复列表每页条数";s:5:"group";s:1:"2";s:5:"extra";s:0:"";s:6:"remark";s:0:"";s:11:"create_time";s:10:"1386645376";s:11:"update_time";s:10:"1387178083";s:6:"status";s:1:"1";s:5:"value";s:2:"10";s:4:"sort";s:1:"0";}i:25;a:12:{s:2:"id";s:2:"36";s:4:"name";s:14:"ADMIN_ALLOW_IP";s:4:"type";s:1:"2";s:5:"title";s:20:"后台允许访问IP";s:5:"group";s:1:"4";s:5:"extra";s:0:"";s:6:"remark";s:62:"多个用逗号分隔，如果不配置表示不限制IP访问";s:11:"create_time";s:10:"1387165454";s:11:"update_time";s:10:"1387165553";s:6:"status";s:1:"1";s:5:"value";s:0:"";s:4:"sort";s:2:"12";}i:26;a:12:{s:2:"id";s:2:"37";s:4:"name";s:15:"SHOW_PAGE_TRACE";s:4:"type";s:1:"4";s:5:"title";s:23:"是否显示页面Trace";s:5:"group";s:1:"4";s:5:"extra";s:18:"0:关闭
+1:开启";s:6:"remark";s:29:"是否显示页面Trace信息";s:11:"create_time";s:10:"1387165685";s:11:"update_time";s:10:"1387165685";s:6:"status";s:1:"1";s:5:"value";s:1:"0";s:4:"sort";s:1:"1";}}
+?>

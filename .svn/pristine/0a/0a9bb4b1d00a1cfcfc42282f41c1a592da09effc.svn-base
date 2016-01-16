@@ -1,0 +1,68 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="clearfix b-index mb15">
+  <ul>
+     <li><a href="#"><img src="__IMG__/hd1.jpg" border="0" /></a></li>
+     <li><a href="#"><img src="__IMG__/hd2.jpg" border="0" /></a></li>
+     <li><a href="#"><img src="__IMG__/hd3.jpg" border="0" /></a></li>
+     <li><a href="#"><img src="__IMG__/hd4.jpg" border="0" /></a></li>
+     <li><a href="#"><img src="__IMG__/hd5.jpg" border="0" /></a></li>
+  </ul>
+   <ol>
+      <li class="current"></li>
+      <li></li>
+      <li></li>
+   </ol>
+</div>
+<div class="main clearfix" style="background-color: #f0f2e7;">
+	<dl class="meun">
+	<volist name="Think.config.PRO_LIST_TYPE" id="newsType" key="k">
+	   <dt>{$newsType}</dt>
+		  <volist name="list" id="l">
+	        <if condition="$l['type'] eq $k">
+	           <dd><a href="/Index/pro/type/{$l.type}/pid/{$l.id}.html">{$l.title}</a></dd>
+	        </if>
+	     </volist>
+	</volist>
+	</dl>
+    <div class="meun_index pt30">
+    	<div class="fl w235 ml20"><h3>{$Think.lang.T_ID_1|news_list_type}</h3>
+    	    <div class="d-s-r fl">
+		    	<img src="__IMG__/index_01.png" border="0" class="fl"/>
+		    	<ul class="fl mt5 h-list">
+		    	    <volist name="newsList" id="vo" >
+		    	        <if condition="$vo['pid'] eq 1">
+		    		    <li><a href="/Index/ndef/id/{$vo.id}.html" title="{$vo.title}" target="_blank">{$vo.title}</a></li>
+		    		    </if>
+		    		</volist>
+		    	</ul>
+	    	</div>
+    	</div>
+    	<div class="fl w235 ml10"><h3>{$Think.lang.T_ID_2|news_list_type}</h3>
+    	    <div class="d-s-r fl">
+		    	<img src="__IMG__/index_02.png" border="0" />
+		    	<ul class="fl mt5 h-list">
+		    	    <volist name="newsList" id="vo" >
+		    	        <if condition="$vo['pid'] eq 2">
+		    		      <li><a href="/Index/ndef/id/{$vo.id}.html" title="{$vo.title}" target="_blank">{$vo.title}</a></li>
+		    		    </if>
+		    		</volist>
+		    	</ul>
+	    	</div>
+	    </div>	
+    	<div class="fl w235 ml10"><h3>{$Think.lang.T_CONRACT_US}</h3>	    	
+	    	 <img src="__IMG__/index_03.png" border="0" />
+	    	 <div class="fl mt5 lh20 f12">				
+	    	    {$Think.lang.ADDRESS}：{:C('NET_ADD')}<br>
+				{$Think.lang.ZIP}：{:C('NET_YOUPIAN')}<br>
+				{$Think.lang.TELE}：{:C('NET_ZUOJI')}<br>
+				{$Think.lang.FAX}：{:C('NET_CHUANZHEN')}<br>
+				{$Think.lang.CONTACT}：{:C('NET_LXRDH')}<br>
+				{$Think.lang.HOT}：{:C('NET_FWRX')}<br>
+				{$Think.lang.NET}：{:C('NET_URL')}<br>
+				E-mial：{:C('NET_MAIL')}
+             </div>
+    	</div>
+    </div>
+</div>
+</block>

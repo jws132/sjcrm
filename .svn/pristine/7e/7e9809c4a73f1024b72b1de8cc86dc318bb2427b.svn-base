@@ -1,0 +1,82 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  
+  <div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+    
+  <div class="formbody">
+
+<table cellspacing="0" width="100%" class="content_view">
+  <tbody><tr>
+    <td>栏目名称</td>
+    <td><input type="text" name="name" id="name" class="validate input-text" style="color:;" validtip="required" value="走进绿洲">
+        <a class="selectcolor colorpicker" onclick="colorpicker(this,'color','name')">&nbsp;</a>
+        <input type="hidden" name="color" id="color" value="">
+    </td>
+    <td>外部链接</td>
+    <td>是<input type="radio" name="isexternal" value="1" onclick="$('#externalurltr').show();">否<input type="radio" name="isexternal" value="0" checked="" onclick="$('#externalurltr').hide();"></td>
+    <td rowspan="6" class="upic" valign="top">
+    <img src="http://www.fjlzcy.com/data/attachment/image/20150818/8fa4738496484841cf27b1739ccc4878.jpg" onclick="uploadpic(this,'thumb')" width="150" id="imgthumb"><input type="hidden" name="thumb" id="thumb" value="data/attachment/image/20150818/8fa4738496484841cf27b1739ccc4878.jpg"><br><input type="button" class="btn" onclick="unsetThumb('thumb','imgthumb')" value="取消图片"> 
+    </td>
+  </tr>
+  <tr style="display:none;" id="externalurltr"><td>链接地址</td><td colspan="3"><input type="text" name="externalurl" id="externalurl" size="80" class="input-text" value=""></td>
+  </tr><tr>
+    <td>栏目目录</td>
+    <td><input type="text" name="dir" id="dir" class="validate input-text" validtip="required" value="about"></td>
+    <td>弹出方式</td>
+    <td>当前页<input type="radio" name="target" value="_self" checked="">新页面<input type="radio" name="target" value="_blank"></td>
+  </tr>
+  <tr><td>栏目模型</td>
+    <td><select name="model" id="model" class="validate" validtip="required">
+                <option value="article">文章</option>
+                <option value="product">产品</option>
+                <option value="page" selected="">单页</option>
+                <option value="hr">招聘</option>
+                <option value="guestbook">留言</option>
+                <option value="jws"></option>
+                </select>
+    </td>
+    <td>上级栏目</td><td>
+      <select name="parent" onchange="setClass(this)">
+      <option value="0">顶级栏目</option><option value="1"> 新闻资讯</option><option value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 行业动态</option><option value="12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 企业动态</option><option value="3"> 产品展示</option><option value="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 白茶</option><option value="11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 龙井</option><option value="27"> 茶道茶艺</option><option value="5"> 招聘中心</option><option value="7" disabled=""> 走进绿洲</option><option value="8"> 在线留言</option><option value="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 合作咨询</option><option value="31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 意见建议</option><option value="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 求职应聘</option><option value="33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 投诉建议</option><option value="29"> 联系我们</option><option value="26"> 制茶流程</option>     </select></td>
+  </tr>
+  <tr>
+    <td>导航显示</td>
+    <td>是<input type="radio" name="isnavigation" value="1" checked="">否<input type="radio" name="isnavigation" value="0"></td>
+    <td>允许添加内容</td>
+    <td>是<input type="radio" name="isdisabled" value="0" checked="">否<input type="radio" name="isdisabled" value="1"></td>
+  </tr>
+  <tr><td>SEO标题</td><td colspan="3"><input type="text" name="title" id="title" size="80" class="input-text" value="X6CMS网站管理系统简介"></td>
+  </tr><tr><td>SEO关键词</td><td colspan="3"><input type="text" name="keywords" id="keywords" size="80" class="input-text" value="X6CMS"></td>
+  </tr><tr><td>SEO描述</td><td colspan="3"><textarea rows="3" cols="79" name="description" id="description" class="txtarea">X6CMS：全称小六网站内容管理系统。X6CMS是一个功能完善的营销型网站管理平台，采用PHP+MYSQL架构，全站内置SEO优化机制，界面简介，操作方便。</textarea></td></tr>
+  <tr>
+    <td>内容</td>
+    <td colspan="4"><div class="ke-container ke-container-default" style="width: 668px;"><div style="display:block;" class="ke-toolbar" unselectable="on"><span class="ke-outline" data-name="source" title="HTML代码" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-source" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="undo" title="后退(Ctrl+Z)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-undo" unselectable="on"></span></span><span class="ke-outline" data-name="redo" title="前进(Ctrl+Y)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-redo" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="preview" title="预览" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-preview" unselectable="on"></span></span><span class="ke-outline" data-name="print" title="打印(Ctrl+P)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-print" unselectable="on"></span></span><span class="ke-outline" data-name="template" title="插入模板" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-template" unselectable="on"></span></span><span class="ke-outline" data-name="code" title="插入程序代码" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-code" unselectable="on"></span></span><span class="ke-outline" data-name="cut" title="剪切(Ctrl+X)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-cut" unselectable="on"></span></span><span class="ke-outline" data-name="copy" title="复制(Ctrl+C)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-copy" unselectable="on"></span></span><span class="ke-outline" data-name="paste" title="粘贴(Ctrl+V)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-paste" unselectable="on"></span></span><span class="ke-outline" data-name="plainpaste" title="粘贴为无格式文本" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-plainpaste" unselectable="on"></span></span><span class="ke-outline" data-name="wordpaste" title="从Word粘贴" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-wordpaste" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="justifyleft" title="左对齐" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifyleft" unselectable="on"></span></span><span class="ke-outline" data-name="justifycenter" title="居中" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifycenter" unselectable="on"></span></span><span class="ke-outline" data-name="justifyright" title="右对齐" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifyright" unselectable="on"></span></span><span class="ke-outline" data-name="justifyfull" title="两端对齐" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifyfull" unselectable="on"></span></span><span class="ke-outline" data-name="insertorderedlist" title="编号" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-insertorderedlist" unselectable="on"></span></span><span class="ke-outline" data-name="insertunorderedlist" title="项目符号" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-insertunorderedlist" unselectable="on"></span></span><span class="ke-outline" data-name="indent" title="增加缩进" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-indent" unselectable="on"></span></span><span class="ke-outline" data-name="outdent" title="减少缩进" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-outdent" unselectable="on"></span></span><span class="ke-outline" data-name="subscript" title="下标" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-subscript" unselectable="on"></span></span><span class="ke-outline" data-name="superscript" title="上标" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-superscript" unselectable="on"></span></span><span class="ke-outline" data-name="clearhtml" title="清理HTML代码" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-clearhtml" unselectable="on"></span></span><span class="ke-outline" data-name="quickformat" title="一键排版" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-quickformat" unselectable="on"></span></span><span class="ke-outline" data-name="selectall" title="全选(Ctrl+A)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-selectall" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="fullscreen" title="全屏显示(Esc)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-fullscreen" unselectable="on"></span></span><div class="ke-hr"></div><span class="ke-outline" data-name="formatblock" title="段落" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-formatblock" unselectable="on"></span></span><span class="ke-outline" data-name="fontname" title="字体" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-fontname" unselectable="on"></span></span><span class="ke-outline" data-name="fontsize" title="文字大小" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-fontsize" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="forecolor" title="文字颜色" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-forecolor" unselectable="on"></span></span><span class="ke-outline" data-name="hilitecolor" title="文字背景" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-hilitecolor" unselectable="on"></span></span><span class="ke-outline" data-name="bold" title="粗体(Ctrl+B)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-bold" unselectable="on"></span></span><span class="ke-outline" data-name="italic" title="斜体(Ctrl+I)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-italic" unselectable="on"></span></span><span class="ke-outline" data-name="underline" title="下划线(Ctrl+U)" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-underline" unselectable="on"></span></span><span class="ke-outline" data-name="strikethrough" title="删除线" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-strikethrough" unselectable="on"></span></span><span class="ke-outline" data-name="lineheight" title="行距" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-lineheight" unselectable="on"></span></span><span class="ke-outline" data-name="removeformat" title="删除格式" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-removeformat" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="image" title="图片" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-image" unselectable="on"></span></span><span class="ke-outline" data-name="multiimage" title="批量图片上传" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-multiimage" unselectable="on"></span></span><span class="ke-outline" data-name="flash" title="Flash" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-flash" unselectable="on"></span></span><span class="ke-outline" data-name="media" title="视音频" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-media" unselectable="on"></span></span><span class="ke-outline" data-name="insertfile" title="插入文件" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-insertfile" unselectable="on"></span></span><span class="ke-outline" data-name="table" title="表格" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-table" unselectable="on"></span></span><span class="ke-outline" data-name="hr" title="插入横线" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-hr" unselectable="on"></span></span><span class="ke-outline" data-name="emoticons" title="插入表情" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-emoticons" unselectable="on"></span></span><span class="ke-outline" data-name="baidumap" title="百度地图" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-baidumap" unselectable="on"></span></span><span class="ke-outline" data-name="pagebreak" title="插入分页符" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-pagebreak" unselectable="on"></span></span><span class="ke-outline" data-name="anchor" title="锚点" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-anchor" unselectable="on"></span></span><span class="ke-outline" data-name="link" title="超级链接" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-link" unselectable="on"></span></span><span class="ke-outline" data-name="unlink" title="取消超级链接" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-unlink" unselectable="on"></span></span><span class="ke-inline-block ke-separator"></span><span class="ke-outline" data-name="about" title="关于" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-about" unselectable="on"></span></span></div><div style="display: block; height: 238px;" class="ke-edit"><iframe class="ke-edit-iframe" hidefocus="true" frameborder="0" style="width: 100%; height: 238px;"></iframe><textarea class="ke-edit-textarea" hidefocus="true" style="width: 100%; height: 238px; display: none;"></textarea></div><div class="ke-statusbar"><span class="ke-inline-block ke-statusbar-center-icon"></span><span class="ke-inline-block ke-statusbar-right-icon"></span></div></div><textarea style="width: 668px; height: 300px; display: none;" name="content" id="content" class="editor">&lt;p align="left"&gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;span style="line-height:2.5;font-size:14px;"&gt;绿洲茶业（福建福鼎绿洲茶业有限公司）始于清乾隆元年，世代住在白琳镇秀洋村的王家就以制茶、售茶为生，由于产地优越、技艺精湛，王家所制作的白茶，备受各地爱茶人士的喜爱，经过几代人的工艺积淀，业内影响力越来越大的王家被业内誉为"茶王世家"，销量也随之节节攀升。为了保质保量的供应白茶给需求增大的客户，在2005年创建了福建福鼎绿洲茶厂。 遵循祖训，保持白茶出产品质的绿洲茶厂，慢慢聚集了一批国家级制茶专家、评茶大师，是福鼎白茶茶叶原产地保护的授权使用者，现在福鼎白茶有10万多亩自有白茶基地、1000多亩生态茶园及8000多亩战略合作茶园。&lt;/span&gt;
+&lt;/p&gt;</textarea></td></tr>
+  <tr>
+  </tr><tr>
+    <td>分页条数</td>
+    <td><input type="text" name="pagesize" id="pagesize" size="5" class="input-text" value="0"></td>
+    <td>列表页模板</td>
+    <td colspan="2"><input type="text" name="tpllist" id="tpllist" class="input-text" value=""></td>
+  </tr>
+  <tr>
+    <td>内容页模板</td>
+    <td><input type="text" name="tpldetail" id="tpldetail" class="input-text" value=""></td>
+    <td>顺序</td>
+    <td colspan="2"><input type="text" name="listorder" id="listorder" value="1" class="input-text"></td>
+  </tr>
+  </tbody></table>
+  
+  </div>
+  </body>
+  </html>

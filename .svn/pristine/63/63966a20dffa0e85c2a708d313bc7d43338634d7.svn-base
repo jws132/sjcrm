@@ -1,0 +1,110 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="main clearfix pt15">
+        <div class="w290 fl">
+	 		<div class="w250 w-a-bj ml10 p10">
+	 		  <include file="Public/net" />
+	 		</div>
+	 	</div>  	 
+	 	<div class="fr w700">
+	 		<div class="col-title">留言列表</div>
+            <div class="col-conter">
+            <volist name="list" id="vo">
+            	<table cellspacing="0"  width="100%" align="center" cellpaddin="0" class="message-tab mb10">
+						<tr>
+					    	<td width="11%" align="right">姓名&nbsp;&nbsp;</td>
+					      	<td width="25%">{$vo.name}</td>
+					      	<td width="8%" align="right">时间&nbsp;&nbsp;</td>
+					      	<td width="23%">{$vo.create_time|date='Y-m-d',###}</td>
+				      	</tr>
+					 	<tr>
+					     	<td width="11%" align="right">主题&nbsp;&nbsp;</td>
+					     	<td colspan="3">{$vo.title}</td>
+				      	</tr>
+					   	<tr>
+					    	<td width="11%" align="right">内容&nbsp;&nbsp;</td>
+					     	<td colspan="3">{$vo.conter}</td>
+				   		</tr>
+				   		<notempty name="vo.hf">
+					  	<tr>
+					    	<td width="11%" align="right"><font color="red">回复内容</font>&nbsp;&nbsp;</td>
+					       	<td colspan="3"><font color="red">{$vo.hf}</font></td>
+				      	</tr>
+				      	</notempty>
+				</table>
+				</volist>
+				<div class="page">
+	            {$page}
+	            </div>
+            </div>
+            <div class="col-title">我要留言</div>
+            <div class="col-conter" style="line-height:35px; font-size:12px;">
+            <form id="ajaxFrm">
+            <span class="clsShow" style="color:red;"></span>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m-tab">
+	          <tbody>
+	            <tr>
+	                <td>标题：</td><td colspan="3" ><input name="title" id="title" type="text" size="96" maxlength="255"></td>
+	            </tr>
+	            <tr>
+		            <td>真实姓名：</td><td><input type="text" name="name" id="name" class="contactTex1" size="35"></td>
+		            <td>电话：</td><td><input type="text" name="phone" id="phone" size="35" maxlength="50"></td>
+	            </tr>
+	            <tr>
+	                <td>留言内容：</td><td colspan="3" bgcolor="#FFFFFF"><textarea name="conter"  cols="71" rows="4"></textarea></td>
+	            </tr>
+	            <tr>
+	                <td></td><td colspan="3">
+	                <input type="hidden" name="status" value="1">
+	                <input type="image" id="submit" onClick="onClink(); return false;" style="margin-top:10px;" name="submit" value="留言" src="__IMG__/gb-button.gif">
+	                </td>
+	            </tr>
+	          </tbody>
+            </table>
+            </form>
+
+            </div>
+	 	</div>
+
+</div>
+<script type="text/javascript" >
+
+//重载验证码  
+function freshVerify() {  
+  document.getElementById('verifyImg').src='__URL__/verify/'+Math.random();  
+}  
+
+function onClink(){
+   var title=$('#title').val();
+   var name=$('#name').val();
+   var phone=$('#phone').val();
+   if(title==''){
+    	$(".clsShow").html("标题不能为空");
+    	return false;
+   }
+   if(name==''){
+    	$(".clsShow").html("姓名不能为空");
+    	return false;
+   }
+   if(phone==''){
+    	$(".clsShow").html("号码不能为空");
+    	return false;
+   }
+   $.ajax({
+        url: '{:U("guestbook")}', //登录处理页
+        type: "POST",
+        dataType : 'json',
+        data: $("#ajaxFrm").serialize(),
+        success: function(data){ 
+        	alert(data.status);
+	        if(data.status == 1){
+	           $(".clsShow").html("操作提示，登录成功！");
+	        }else {
+	           $(".clsShow").html("操作提示，登录失败！");
+	        }
+        }  
+    })
+}
+
+</script>
+</block>

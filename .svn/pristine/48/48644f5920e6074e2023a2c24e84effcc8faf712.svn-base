@@ -1,0 +1,163 @@
+[ 2015-10-21T09:59:58+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005027s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000648s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000377s ]
+
+[ 2015-10-21T10:00:00+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.004887s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000559s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000334s ]
+
+[ 2015-10-21T11:14:29+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.004862s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000565s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000451s ]
+
+[ 2015-10-21T11:14:31+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002686s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000393s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000270s ]
+
+[ 2015-10-21T14:33:39+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006864s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000570s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000345s ]
+
+[ 2015-10-21T14:33:42+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006022s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000597s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000351s ]
+
+[ 2015-10-21T15:56:16+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003801s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000350s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000219s ]
+
+[ 2015-10-21T15:56:43+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006313s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000553s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000344s ]
+
+[ 2015-10-21T16:06:00+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003443s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000371s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000237s ]
+
+[ 2015-10-21T16:06:04+08:00 ] 127.0.0.1 /index.php/Admin/Article/Index?cid=268
+ERR: Think\Model:dataList方法不存在！
+
+[ 2015-10-21T16:06:59+08:00 ] 127.0.0.1 /index.php/Admin/Article/Index?cid=268
+ERR: Think\Model:dataList方法不存在！
+
+[ 2015-10-21T16:08:30+08:00 ] 127.0.0.1 /index.php/Admin/Article/Index?cid=268
+ERR: Think\Model:countList方法不存在！
+
+[ 2015-10-21T16:13:40+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006424s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000701s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000436s ]
+
+[ 2015-10-21T16:13:41+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006049s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000595s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000403s ]
+
+[ 2015-10-21T16:20:45+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003224s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000349s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000187s ]
+
+[ 2015-10-21T16:20:48+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006267s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000591s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000348s ]
+
+[ 2015-10-21T16:20:49+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006401s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000580s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000359s ]
+
+[ 2015-10-21T16:25:24+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006097s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000555s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000350s ]
+
+[ 2015-10-21T16:25:26+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006097s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000548s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000342s ]
+
+[ 2015-10-21T18:22:38+08:00 ] 127.0.0.1 /admin.php/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003211s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000321s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000227s ]
+

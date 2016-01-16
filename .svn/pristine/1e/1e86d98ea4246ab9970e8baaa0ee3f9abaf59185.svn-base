@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <title>{:C('WEB_SITE_TITLE')}</title>
+    <meta name="keywords" content="{:C('WEB_SITE_KEYWORD')}"/>
+    <meta name="description" content="{:C('WEB_SITE_DESCRIPTION')}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="__CSS__/base.css" />
+	<!--background: url('__IMG__/bj.png');--> 
+    <style type="text/css">
+    	body{background-color: #0E0C72; color:#fff; font-size: 20px;}
+    	.main{ width: 970px; margin:0px auto; padding-top: 10px; } 
+    	a{ color:#fff; text-decoration: :none;}
+    </style>
+	<script type="text/javascript" src="http://z.cnzz.net/o.php?sid=1255093997"></script>
+</head>
+<body>
+<div class="main">
+    <div class="tc"><img src="__IMG__/logo-def.png" border="0" /></div>
+	<div class="clearfix pt30">
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="#version=7,0,0,0" width="970" height="350" id="Untitled-1" align="center">
+			<param name="allowScriptAccess" value="sameDomain" />
+			<param name="movie" value="__IMG__/yindao.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#ffffff" />
+			<embed src="__IMG__/yindao.swf" quality="high" bgcolor="#ffffff" width="970" height="350" name="mymovie" align="center" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="" />
+		</object>
+	</div>
+	<div class="clearfix tc pt50 pb20" style="line-height:40px;">
+	<a href="/Index/home.html/?l=zh-cn">中文版</a>  |  <a href="/Index/home.html/?l=en-us">ENGLISH</a>
+	</div>
+
+</div>
+
+</body>
+</html>

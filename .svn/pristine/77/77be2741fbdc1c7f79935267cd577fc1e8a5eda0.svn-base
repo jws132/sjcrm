@@ -1,0 +1,2236 @@
+[ 2015-03-18T09:26:07+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 非法操作:Static
+
+[ 2015-03-18T09:26:20+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 80 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002526s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000585s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000533s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001426s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2015-03-18T09:26:22+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 80 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002598s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000519s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001421s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 106 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001990s ]
+
+[ 2015-03-18T09:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000756s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000552s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001444s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002042s ]
+
+[ 2015-03-18T09:27:11+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004361s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000404s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000590s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001492s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2015-03-18T09:36:12+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002321s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000377s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001546s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002476s ]
+
+[ 2015-03-18T09:36:55+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002734s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000415s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000523s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001436s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002368s ]
+
+[ 2015-03-18T09:37:03+08:00 ] 127.0.0.1 /index.php/Along/Del/id/13.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\AlongModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\AlongModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002322s ]
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.003076s ]
+SQL: DELETE FROM `along` WHERE `id` = 13 [ RunTime:0.127012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000972s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002062s ]
+
+[ 2015-03-18T09:37:05+08:00 ] 127.0.0.1 /index.php/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002384s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000541s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001476s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001850s ]
+
+[ 2015-03-18T09:37:06+08:00 ] 127.0.0.1 /index.php/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000791s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000512s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001397s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002271s ]
+
+[ 2015-03-18T09:41:38+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004630s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000549s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001482s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002241s ]
+
+[ 2015-03-18T09:41:41+08:00 ] 127.0.0.1 /index.php/News/IndexNews/pid/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003078s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 2 AND `type` = 1  [ RunTime:0.000616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000523s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001404s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002128s ]
+
+[ 2015-03-18T09:41:43+08:00 ] 127.0.0.1 /index.php/News/IndexNews/pid/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004757s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000564s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001571s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001796s ]
+
+[ 2015-03-18T09:41:44+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexCase.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004554s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 2  [ RunTime:0.000654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001432s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b166bf234e989acd7a6902cbdcbf5499.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b166bf234e989acd7a6902cbdcbf5499.php 第 109 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b166bf234e989acd7a6902cbdcbf5499.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002757s ]
+
+[ 2015-03-18T09:41:46+08:00 ] 127.0.0.1 /index.php/Admin/Pro/IndexClass.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\ProModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\ProModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.002448s ]
+SQL: SELECT * FROM `pro` WHERE `type` = 1 AND `p` = 1  [ RunTime:0.000565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000551s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001501s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 24 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 105 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 105 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 105 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 105 行.
+NOTIC: [8] Undefined index: datatime G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 105 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002028s ]
+
+[ 2015-03-18T09:47:23+08:00 ] 127.0.0.1 /index.php/Admin/Pro/IndexClass.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\ProModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\ProModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.002643s ]
+SQL: SELECT * FROM `pro` WHERE `type` = 1 AND `p` = 1  [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000646s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001702s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\8b520ad48302c933f4b61af01ceb3a7d.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001989s ]
+
+[ 2015-03-18T09:47:27+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004709s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.000917s ]
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000420s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000532s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001240s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2015-03-18T09:47:34+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004492s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000456s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000560s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001600s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001810s ]
+
+[ 2015-03-18T09:47:37+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004626s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.000893s ]
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000491s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000505s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001202s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001523s ]
+
+[ 2015-03-18T09:48:52+08:00 ] 127.0.0.1 /index.php/News/IndexNews/pid/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004851s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000532s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001416s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+
+[ 2015-03-18T09:48:55+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001915s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004587s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.000903s ]
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000744s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.001148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001249s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2015-03-18T09:49:36+08:00 ] 127.0.0.1 /index.php/News/IndexNews/pid/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002544s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000537s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001439s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2015-03-18T09:49:38+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002087s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004687s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.000885s ]
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000720s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.001105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2015-03-18T09:49:57+08:00 ] 127.0.0.1 /index.php/News/IndexNews/pid/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004653s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000509s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001407s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002239s ]
+
+[ 2015-03-18T09:50:02+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004695s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.001110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001461s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001916s ]
+
+[ 2015-03-18T09:50:05+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002731s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000525s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001417s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001828s ]
+
+[ 2015-03-18T09:50:15+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexCase.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002806s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 2  [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000528s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001560s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\b166bf234e989acd7a6902cbdcbf5499.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b166bf234e989acd7a6902cbdcbf5499.php 第 109 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b166bf234e989acd7a6902cbdcbf5499.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001850s ]
+
+[ 2015-03-18T09:50:21+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002478s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000545s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001470s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2015-03-18T09:51:37+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004364s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001472s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined variable: ACTION_NAME G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 45 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002011s ]
+
+[ 2015-03-18T09:51:39+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002501s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000514s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001400s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined variable: ACTION_NAME G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 45 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2015-03-18T09:51:42+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004831s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001473s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined variable: ACTION_NAME G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 45 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2015-03-18T09:52:17+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002893s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001433s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002092s ]
+
+[ 2015-03-18T09:52:20+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003984s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000521s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001409s ]
+NOTIC: [8] Undefined index: username G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002009s ]
+
+[ 2015-03-18T10:02:25+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.003008s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000522s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001413s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2015-03-18T10:02:54+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.005255s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000787s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001402s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2015-03-18T10:03:51+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004540s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2015-03-18T10:05:05+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004288s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000787s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000542s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001520s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002191s ]
+
+[ 2015-03-18T10:05:55+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000748s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000616s ]
+
+[ 2015-03-18T10:08:06+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004404s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000481s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000624s ]
+
+[ 2015-03-18T10:08:08+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004412s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000410s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000612s ]
+
+[ 2015-03-18T10:08:48+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000621s ]
+
+[ 2015-03-18T10:15:35+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004673s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.000811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000526s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001425s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001883s ]
+
+[ 2015-03-18T10:17:24+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexLinks.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004664s ]
+SQL: SELECT * FROM `news` WHERE `type` = 3  [ RunTime:0.001164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000534s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001443s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\dde6709d92f4a9708f89240325ebef8f.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002021s ]
+
+[ 2015-03-18T10:22:25+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.002515s ]
+SQL: SELECT * FROM `model` ORDER BY sort desc  [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000532s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001465s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\e72bffe9ef04a725d95c9d6c6a75495b.php 第 24 行.
+NOTIC: [8] Undefined variable: list G:\bnnbr\Application\Runtime\Cache\Admin\e72bffe9ef04a725d95c9d6c6a75495b.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001870s ]
+
+[ 2015-03-18T11:08:03+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: bbce1fb8a1e7f7a0a4c978eccb3ba8c4 G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 170 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000575s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001616s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+
+[ 2015-03-18T11:08:09+08:00 ] 127.0.0.1 /admin
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: eb249adee0d69502ce18442f674e0cc2 G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 170 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001758s ]
+
+[ 2015-03-18T11:08:14+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001715s ]
+
+[ 2015-03-18T11:08:16+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000598s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001670s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+
+[ 2015-03-18T11:08:17+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000487s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001386s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001674s ]
+
+[ 2015-03-18T11:08:18+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000482s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001736s ]
+
+[ 2015-03-18T11:08:19+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000541s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001721s ]
+
+[ 2015-03-18T11:08:20+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000484s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001711s ]
+
+[ 2015-03-18T11:08:26+08:00 ] 127.0.0.1 /admin
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000547s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001542s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001841s ]
+
+[ 2015-03-18T11:10:56+08:00 ] 127.0.0.1 /admin
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000581s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001605s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001736s ]
+
+[ 2015-03-18T11:12:24+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001854s ]
+
+[ 2015-03-18T11:12:27+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000539s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001812s ]
+
+[ 2015-03-18T11:12:29+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000507s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001696s ]
+
+[ 2015-03-18T11:12:30+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001691s ]
+
+[ 2015-03-18T11:12:34+08:00 ] 127.0.0.1 /Index/home.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [8] Undefined index: a8a51f2ba46cb18b2f747bff7b7a7f99 G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 170 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST G:\bnnbr\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000560s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+
+[ 2015-03-18T11:14:52+08:00 ] 127.0.0.1 /index.php/Admin/Public/index,html
+ERR: 非法操作:index,html
+
+[ 2015-03-18T11:14:56+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 非法操作:Static
+
+[ 2015-03-18T11:17:02+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000400s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000525s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001451s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined variable: user G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002162s ]
+
+[ 2015-03-18T11:17:08+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 非法操作:Static
+
+[ 2015-03-18T11:17:14+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.004996s ]
+SQL: SELECT * FROM `channel` ORDER BY id desc LIMIT 6   [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000768s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001922s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001842s ]
+
+[ 2015-03-18T13:58:20+08:00 ] 127.0.0.1 /index.php/Admin/Channel/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.134053s ]
+SQL: SELECT * FROM `model` ORDER BY sort desc  [ RunTime:0.001106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000668s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001701s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\e72bffe9ef04a725d95c9d6c6a75495b.php 第 24 行.
+NOTIC: [8] Undefined variable: list G:\bnnbr\Application\Runtime\Cache\Admin\e72bffe9ef04a725d95c9d6c6a75495b.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.375211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.376423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.038410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.065431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.066451s ]
+
+[ 2015-03-18T15:09:49+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.035045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.001375s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.001823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000612s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001734s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined variable: user G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002094s ]
+
+[ 2015-03-18T15:09:52+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002321s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000536s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined variable: user G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2015-03-18T16:18:45+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.037426s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.001279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000547s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001476s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2015-03-18T16:18:48+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews/pid/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004821s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 2 AND `type` = 1  [ RunTime:0.001116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000606s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001666s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001745s ]
+
+[ 2015-03-18T16:18:50+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews/pid/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002688s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000536s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001457s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001921s ]
+
+[ 2015-03-18T16:18:55+08:00 ] 127.0.0.1 /index.php/Admin/News/EditNews/id/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002296s ]
+SQL: SELECT * FROM `news` WHERE `id` = 1 LIMIT 1   [ RunTime:0.000567s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002961s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\932aae15d747c6f8cbbf228839f1115b.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002329s ]
+
+[ 2015-03-18T16:34:08+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004668s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000894s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000549s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001524s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001916s ]
+
+[ 2015-03-18T16:37:17+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews/pid/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002430s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 2 AND `type` = 1  [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000549s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001481s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002283s ]
+
+[ 2015-03-18T16:37:20+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews/pid/1.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002557s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000620s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001751s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001794s ]
+
+[ 2015-03-18T16:37:22+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews/pid/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002689s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 2 AND `type` = 1  [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000564s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001556s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001870s ]
+
+[ 2015-03-18T16:46:09+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000434s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000561s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001495s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined variable: user G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002264s ]
+
+[ 2015-03-18T16:49:36+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.004429s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000881s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000705s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000556s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001519s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined variable: user G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002470s ]
+
+[ 2015-03-18T17:00:31+08:00 ] 127.0.0.1 /index.php/Admin/Along/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `along` [ RunTime:0.002394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `along` LIMIT 1   [ RunTime:0.000415s ]
+SQL: SELECT * FROM `along` ORDER BY `id` desc LIMIT 0,10   [ RunTime:0.000588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000577s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001528s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 24 行.
+NOTIC: [8] Undefined variable: user G:\bnnbr\Application\Runtime\Cache\Admin\97b059c162ab2d770a33c5139c658504.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2015-03-18T17:00:53+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004302s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.000711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000569s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001477s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2015-03-18T17:00:57+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002534s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000537s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001497s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001952s ]
+
+[ 2015-03-18T17:02:03+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002903s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000601s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001667s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2015-03-18T17:02:06+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004265s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000554s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001495s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001734s ]
+
+[ 2015-03-18T17:02:10+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004395s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000558s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001513s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001933s ]
+
+[ 2015-03-18T17:02:13+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004671s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 2 ORDER BY sort  [ RunTime:0.000707s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000562s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001860s ]
+
+[ 2015-03-18T17:02:16+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/4.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004890s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 4 ORDER BY sort  [ RunTime:0.001399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000550s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001462s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002077s ]
+
+[ 2015-03-18T17:02:35+08:00 ] 127.0.0.1 /index.php/Admin/Config/save.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004391s ]
+SQL: UPDATE `config` SET `value`='0' WHERE `name` = 'SHOW_PAGE_TRACE' [ RunTime:0.000841s ]
+SQL: UPDATE `config` SET `value`='0:数字\r\n1:字符\r\n2:文本\r\n3:数组\r\n4:枚举' WHERE `name` = 'CONFIG_TYPE_LIST' [ RunTime:0.000817s ]
+SQL: UPDATE `config` SET `value`='ambiance' WHERE `name` = 'CODEMIRROR_THEME' [ RunTime:0.000892s ]
+SQL: UPDATE `config` SET `value`='1:基本\r\n2:内容\r\n4:系统\r\n5:联系方式' WHERE `name` = 'CONFIG_GROUP_LIST' [ RunTime:0.001257s ]
+SQL: UPDATE `config` SET `value`='./Data/' WHERE `name` = 'DATA_BACKUP_PATH' [ RunTime:0.000697s ]
+SQL: UPDATE `config` SET `value`='1:视图\r\n2:控制器' WHERE `name` = 'HOOKS_TYPE' [ RunTime:0.000593s ]
+SQL: UPDATE `config` SET `value`='20971520' WHERE `name` = 'DATA_BACKUP_PART_SIZE' [ RunTime:0.000439s ]
+SQL: UPDATE `config` SET `value`='AUTH_ON:1\r\nAUTH_TYPE:2' WHERE `name` = 'AUTH_CONFIG' [ RunTime:0.000513s ]
+SQL: UPDATE `config` SET `value`='1' WHERE `name` = 'DATA_BACKUP_COMPRESS' [ RunTime:0.000503s ]
+SQL: UPDATE `config` SET `value`='9' WHERE `name` = 'DATA_BACKUP_COMPRESS_LEVEL' [ RunTime:0.000384s ]
+SQL: UPDATE `config` SET `value`='0' WHERE `name` = 'DEVELOP_MODE' [ RunTime:0.000415s ]
+SQL: UPDATE `config` SET `value`='' WHERE `name` = 'ADMIN_ALLOW_IP' [ RunTime:0.000431s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/95a1fe934b68ebfee8468bf0bc4f0000.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory G:\bnnbr\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000602s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001553s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001850s ]
+
+[ 2015-03-18T17:02:38+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/4.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004668s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 4 ORDER BY sort  [ RunTime:0.001470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000661s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001714s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002168s ]
+
+[ 2015-03-18T17:02:40+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002595s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 5 ORDER BY sort  [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001484s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+NOTIC: [8] Undefined variable: list G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001827s ]
+
+[ 2015-03-18T17:02:45+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004487s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000582s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001630s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001763s ]
+
+[ 2015-03-18T17:02:48+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index/group/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.003896s ]
+SQL: SELECT * FROM `config` WHERE `group` = 5  [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000532s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001466s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2015-03-18T17:02:51+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000547s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001455s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002090s ]
+
+[ 2015-03-18T17:03:24+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004571s ]
+SQL: INSERT INTO `config` (`name`,`title`,`sort`,`type`,`group`,`value`,`extra`,`remark`) VALUES ('NET_NAME','公司名称',0,1,5,'','','') [ RunTime:0.001048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000524s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000560s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032707s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052906s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.056750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002095s ]
+
+[ 2015-03-18T17:03:26+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004499s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000707s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000535s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001460s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002094s ]
+
+[ 2015-03-18T17:03:28+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index/group/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004466s ]
+SQL: SELECT * FROM `config` WHERE `group` = 5  [ RunTime:0.000999s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000536s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001476s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001824s ]
+
+[ 2015-03-18T17:03:32+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000585s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001569s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002303s ]
+
+[ 2015-03-18T17:04:42+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004310s ]
+SQL: INSERT INTO `config` (`name`,`title`,`sort`,`type`,`group`,`value`,`extra`,`remark`) VALUES ('NET_ZUOJI','座机',0,1,5,'','','') [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000626s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001786s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.033812s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054356s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.058225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002405s ]
+
+[ 2015-03-18T17:04:44+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004372s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.001078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000552s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001465s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2015-03-18T17:04:49+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000580s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001551s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003165s ]
+
+[ 2015-03-18T17:05:25+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004563s ]
+SQL: INSERT INTO `config` (`name`,`title`,`sort`,`type`,`group`,`value`,`extra`,`remark`) VALUES ('NET_CHUANZHEN','传真',0,1,5,'','','') [ RunTime:0.000533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000517s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001595s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000572s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032924s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054526s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.058367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002132s ]
+
+[ 2015-03-18T17:05:28+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004405s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000593s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001612s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001831s ]
+
+[ 2015-03-18T17:05:36+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index/group/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004351s ]
+SQL: SELECT * FROM `config` WHERE `group` = 5  [ RunTime:0.001061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000562s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001559s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001812s ]
+
+[ 2015-03-18T17:05:38+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000557s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001475s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002271s ]
+
+[ 2015-03-18T17:06:03+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002616s ]
+SQL: INSERT INTO `config` (`name`,`title`,`sort`,`type`,`group`,`value`,`extra`,`remark`) VALUES ('NET_LIANXIREN','联系人',0,1,5,'','','') [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000595s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032582s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054307s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.058009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002154s ]
+
+[ 2015-03-18T17:06:05+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004437s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001541s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001746s ]
+
+[ 2015-03-18T17:06:08+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index/group/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002752s ]
+SQL: SELECT * FROM `config` WHERE `group` = 5  [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000642s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001737s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001780s ]
+
+[ 2015-03-18T17:06:22+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000572s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001509s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002128s ]
+
+[ 2015-03-18T17:06:56+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004536s ]
+SQL: INSERT INTO `config` (`name`,`title`,`sort`,`type`,`group`,`value`,`extra`,`remark`) VALUES ('NET_LXRDH','联系人电话',0,1,5,'','','') [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000514s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000581s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032532s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052676s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.057170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002834s ]
+
+[ 2015-03-18T17:06:58+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004166s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001679s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001765s ]
+
+[ 2015-03-18T17:07:01+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index/group/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002505s ]
+SQL: SELECT * FROM `config` WHERE `group` = 5  [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000592s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001588s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001966s ]
+
+[ 2015-03-18T17:07:13+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000549s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001465s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2015-03-18T17:07:41+08:00 ] 127.0.0.1 /index.php/Admin/Config/Add.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002562s ]
+SQL: INSERT INTO `config` (`name`,`title`,`sort`,`type`,`group`,`value`,`extra`,`remark`) VALUES ('NET_FWRX','服务热线',0,1,5,'','','') [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000512s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000591s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032583s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\9eaf1d70864573b12962f1d7ff4fadf9.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058173s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.062093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002058s ]
+
+[ 2015-03-18T17:07:44+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.003500s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000559s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001474s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001835s ]
+
+[ 2015-03-18T17:07:54+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.003162s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001770s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2015-03-18T17:07:56+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004357s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 2 ORDER BY sort  [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000564s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001475s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002123s ]
+
+[ 2015-03-18T17:07:59+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/4.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004377s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 4 ORDER BY sort  [ RunTime:0.000992s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000548s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002345s ]
+
+[ 2015-03-18T17:08:01+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/5.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002757s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 5 ORDER BY sort  [ RunTime:0.000610s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000551s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001499s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2015-03-18T17:08:09+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/4.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.003152s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 4 ORDER BY sort  [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000550s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001471s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002067s ]
+
+[ 2015-03-18T17:10:24+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004453s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 2 ORDER BY sort  [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001519s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001918s ]
+
+[ 2015-03-18T17:10:29+08:00 ] 127.0.0.1 /index.php/Admin/Config/Group/id/4.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004546s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `config` WHERE `status` = 1 AND `group` = 4 ORDER BY sort  [ RunTime:0.000845s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000557s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001554s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\f0e08150261218d0ce88a4e77b113ce1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002242s ]
+
+[ 2015-03-18T17:13:10+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.004968s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 1 AND `type` = 1  [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000553s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2015-03-18T17:13:13+08:00 ] 127.0.0.1 /index.php/Admin/News/IndexNews/pid/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+NOTIC: [2048] Declaration of Admin\Model\NewsModel::add() should be compatible with that of Think\Model::add() G:\bnnbr\Application\Admin\Model\NewsModel.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.002666s ]
+SQL: SELECT * FROM `news` WHERE `pid` = 2 AND `type` = 1  [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000533s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001438s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 24 行.
+NOTIC: [8] Undefined index: userId G:\bnnbr\Application\Runtime\Cache\Admin\b238f55a9b227b9094493de2c0387ac6.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001883s ]
+
+[ 2015-03-18T17:15:38+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.004663s ]
+SQL: SELECT * FROM `config` WHERE `group` = 1  [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000535s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001441s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001849s ]
+
+[ 2015-03-18T17:15:40+08:00 ] 127.0.0.1 /index.php/Admin/Config/Index/group/2.html
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' G:\bnnbr\Application\Admin\Controller\CommonController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.002859s ]
+SQL: SELECT * FROM `config` WHERE `group` = 2  [ RunTime:0.000667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001462s ]
+NOTIC: [8] Undefined variable: sessionUserName G:\bnnbr\Application\Runtime\Cache\Admin\441556474436b78b9c5ceb0e8a01ca8e.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001830s ]
+

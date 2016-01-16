@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{:C('WEB_SITE_TITLE')}</title>
+    <meta name="keywords" content="{:C('WEB_SITE_KEYWORD')}"/>
+    <meta name="description" content="{:C('WEB_SITE_DESCRIPTION')}"/>
+    <link rel="stylesheet" href="__CSS__/base.css" />
+	<link rel="stylesheet" href="__CSS__/style.css" />
+	<script src="__JS__/jquery-1.7.2.min.js"></script> 
+	<script src="__JS__/scrolltop.js"></script>
+
+</head>
+<body>
+<div class="clearfix head">
+	<div class="main">
+		<div class="fl"><img src="__IMG__/logo.png" border="" alt=""></div>
+		<ul class="fr head_r mt30">
+			<li><a onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('13552222336');" href="#">{$Think.lang.T_S_H}</a></li><li>|</li>
+			<li><a href="javascript:window.external.addFavorite(window.location.href,'{:C('WEB_SITE_TITLE')}')">{$Think.lang.T_A_C}</a></li><li>|</li>
+			<li><a href="?l=zh-cn" class="red">中文版</a></li><li>|</li>
+			<li><a href="?l=en-us" class="red">English</a></li>
+		</ul>
+	</div>
+</div>
+<div class="clearfix nav">
+	<ul>
+		<li><a href="/">{$Think.lang.T_HOME}</a></li><li>|</li>
+		<li><a href="/Index/about/id/1.html">{$Think.lang.T_ABOUT}</a></li><li>|</li>
+		<li><a href="/Index/news.html">{$Think.lang.T_NEWS}</a></li><li>|</li>
+		<li><a href="/Index/pro.html">{$Think.lang.T_PRODUCT}</a></li><li>|</li>
+		<li><a href="/Index/support/id/2.html">{$Think.lang.T_TECHNICAL_SUPPORT}</a></li><li>|</li>
+		<li><a href="/Index/cases.html">{$Think.lang.T_CASE}</a></li><li>|</li>
+		<li><a href="/Index/about/id/7.html">{$Think.lang.T_SALE}</a></li><li>|</li>
+		<li><a href="/Index/about/id/8.html">{$Think.lang.T_CONRACT_US}</a></li>
+	</ul>
+</div>
+
+<block name="body">
+</block>
+<div class="footer pt10 pb10 tc lh30 mt10"><span style="color:#fff;">{$Think.lang.T_LINK}：</span><volist name="linksList" id="vo"><a href="http://{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a></volist><br>{:C('NET_NAME')}&nbsp;&nbsp;{$Think.lang.TELE}：{:C('NET_ZUOJI')}&nbsp;&nbsp;技术支持：<a href="http://www.jz07.cn" target="_blank" title="蒋文书个人博客">蒋文书个人博客</a>
+</div>
+</body>
+</html>

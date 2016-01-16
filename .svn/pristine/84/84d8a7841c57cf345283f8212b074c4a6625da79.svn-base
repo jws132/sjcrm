@@ -1,0 +1,74 @@
+*{padding:0px; margin: 0px;}
+body{}
+a.red,.red a{color:red!important;}
+
+.w235{ width:235px;}
+.w270{ width:270px;}
+.w290{ width:290px;}
+.w355{ width:355px;}
+.w730{ width:730px;}
+.f12{ font-size: 12px;}
+
+.tc{ text-align:center;}
+
+.main{width: 1000px; margin: 0px auto;}
+.head{ background: url('../img/bjt.png') repeat-x; height: 120px;}
+.head_r li{ padding:5px 8px; float: left;}
+.head_r li a{ color:#333; text-decoration:none; font-size: 12px; }
+.head_r li a:hover{ color:#333; text-decoration:underline;}
+
+.nav{ background: url('../img/nav.png') repeat-x; height: 47px;}
+.nav ul{margin:0px auto; width: 1000px;line-height: 45px;}
+.nav ul li{ padding: 0 17px; float: left; font-size: 14px; color:#fff; }
+.nav ul li a{ color:#fff; text-decoration:none;}
+.nav ul li a:hover{ color:#fff; text-decoration:underline;}
+.b-index {position: relative;  }
+.b-index ul {text-align: center; width: 1000px; height: 400px; overflow: hidden; z-index: 999; margin: 0px auto; }
+.b-index ul li{  width: 100%;}
+.b-index ul li img{ width: 1000px; height: 400px; margin: 0px auto; }
+.b-index ol{ height:15px;position:absolute; bottom:20px; left:47%;}
+.b-index ol li{background-color:#B4B4B4; height:12px; width:12px; float:left; margin-left:20px; cursor:pointer; border-radius: 6px; }
+.b-index ol .current{background-color:#35C42E; width:12px; height:12px; }
+
+.meun{background-color: rgb(249, 103, 0); width: 250px; float:left; font-size: 18px;}
+.meun dt{background:url('../img/4.png') no-repeat 10px #6E4900;  color: #ffffff; text-align: left; line-height: 40px; text-indent: 35px;}
+.meun dd{ border-bottom:2px dashed #DC8041; background:url('../img/5.png') no-repeat 30px; line-height: 40px; text-indent: 50px;}
+.meun dd a{color:#fff; text-decoration: none;}
+.meun dd:hover{ background-color: #DB814F;}
+.meun_index{width: 750px; float: left; }
+.meun_index h3{ line-height: 40px; color: #B55A21; font-size: 18px;}
+.meun_index ul li{background:url('../img/6.png') no-repeat 1px; line-height: 30px; text-indent: 10px; font-size: 12px; border-bottom:1px dashed #8CD7F7;}
+.meun_index .d-s-r{ border-right:1px solid #ddd;}
+
+.footer{ background-color: #6F7060; font-size: 12px;}
+.footer a{color: #fff; text-decoration: none; padding-right:15px; font-size: 12px;}
+
+.col-title{ background-color: #ece7d3; padding-left:15px; line-height: 40px; font-size: 14px; font-weight: bold; color: #000000; }
+.col-h1{font-size: 16px; font-weight:bold; margin-top: 20px; margin-bottom: 15px;}
+.col-data{ border: 1px solid #ddd; margin-bottom: 15px; padding: 7px 0; font-size: 12px;} 
+.col-conter{padding:15px;}
+.w-a-bj{background-color: #ece7d3; }
+.h-list li{ width: 220px;}
+.h-list li a{color:#333; text-decoration:none; font-size: 12px;}
+.a-m-r{background: url('../img/about_01.png') no-repeat; line-height: 40px; height: 50px; width:290px; text-indent: 25px; position: absolute; font-weight: bold; top:15px; font-size: 14px; color:#B55A21;}
+.about-meun{ border:1px solid #9EDDEF; background-color:#fff;}
+.about-meun li{ background: url('../img/proclassbg.gif') no-repeat; line-height: 30px; text-indent:45px; margin-bottom: 5px;}
+.about-meun li a{color: #333; text-decoration: none; font-size: 12px;}
+.news_list li{ line-height: 35px; text-align: right; border-bottom: 1px solid #ddd; background: url('../img/dot.gif') no-repeat 10px 9px;}
+.news_list li a{ padding-left: 30px; color:#333; font-size: 13px; text-decoration: none;}
+.news_list li font{padding-right: 20px; font-size: 12px;}
+.pro_list li{ width:180px; padding: 10px; line-height: 25px; float: left; margin: 0px 18px; font-size: 12px;}
+.pro_list li a{color:#333; text-decoration:none; font-size: 12px;}
+.pro_list li .pic{ padding:5px; border:1px solid #ddd; display: inline-block; background-color: #F7F7F7;}
+.case_list li{ width:170px; padding: 10px; line-height: 25px; float: left; margin: 0px 18px; font-size: 12px;}
+.case_list li a{color:#333; text-decoration:none; font-size: 12px;}
+.case_list li .pic{ padding:5px; border:1px solid #ddd; display: inline-block; background-color: #F7F7F7;}
+.pro-def{ line-height: 40px; font-size: 13px;}
+.pro-def font{ font-weight:bold;}
+
+.m-tab{ line-height: 50px; font-size: 12px;}
+
+.m-tab input[type="text"],.m-tab textarea{ border:1px solid #ddd; padding:7px 5px; }
+.message-tab td{border:1px solid #ddd; font-size: 12px; padding-left: 5px; line-height: 25px; }
+.page { text-align: center; padding-bottom: 30px; padding-top: 10px;}
+.page a,.page span{ color:#333; padding:5px 10px; text-decoration: none; border:1px solid #ddd; fong-size:12px;}

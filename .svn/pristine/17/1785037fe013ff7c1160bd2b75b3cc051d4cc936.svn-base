@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body scroll="no" style="overflow:hidden;">
+<header style="background:url('__IMG__/topbg.gif') repeat-x; height:88px;">
+	 <div class="topleft"><a href="main.html" target="_parent"><img src="__IMG__/logo.png" title="系统首页" /></a></div>
+    <ul class="nav" id="nav">
+        <volist name="navList" id="vo">
+	      <li onclick="_M({$vo.id},'__MODULE__/{$vo.name}')">{$vo.title}</li>
+	    </volist>
+    </ul>
+    <div class="topright">    
+    <ul>
+    <li><span><img src="__IMG__/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
+    <li><a href="#">关于</a></li>
+    <li><a href="{:U('Admin/Public/Logout')}" target="_parent">退出</a></li>
+    </ul>
+     
+    <div class="user">
+    <span><?php echo dump($user_info); ?></span>
+    <i>消息</i>
+    <b>5</b>
+    </div>     
+    </div>
+</header>	
+<section class="leftmenu" style="background-color:#f0f9fd;"></section>
+<div id="content">
+   <iframe name="right" id="rightMain" src="" frameborder="false" scrolling="auto" width="100%" height="auto" allowtransparency="true"></iframe>
+
+    <!--content-->
+</div> 
+  <script type="text/javascript">
+	  $('.tablelist tbody tr:odd').addClass('odd');
+	  $('.leftmenu').css('height',$(window).height()-88 +'px'); 
+      $('#rightMain').css('height',$(window).height()-90 +'px');  
+
+	  /**点击一级栏目获取二级栏目菜单**/
+	  $('#nav li').click(function(){
+	  	 $(this).addClass('selected').siblings().removeClass("selected");
+	  	 //var dataId=$(this).attr('data-id');
+        // menuson(dataId);
+	  })
+
+    $('.menuson li').click(function(){
+       $(this).addClass('active').siblings().removeClass("active");
+    })
+
+  function _M(menuid,targetUrl) {
+     var menuHtml="";
+     $.ajax({
+        url:"__MODULE__/Public/left/mid/"+menuid,
+        type:"POST",
+        success:function(data){
+            menuHtml+="<div class=\"lefttop\"><span></span>"+data['menu']+"</div><ul class=\"menuson\">";
+            $.each(data,function(i) { 
+                if(data[i].title){
+                   menuHtml +="<li onclick=\"_MP("+data[i].id+",'__MODULE__/"+data[i].name+"/"+data[i].action+"?cid="+data[i].id+"')\"><cite></cite>"+data[i].title+"<i></i></li>";
+                   //menuHtml +="<li onclick=\"_MP("+data[i].id+",'__MODULE__/"+data[i].module+"')\"><cite></cite>"+data[i].title+"<i></i></li>";
+                } 
+            });
+            menuHtml+="</ul>";
+          $(".leftmenu").html(menuHtml);
+        }
+       });
+    }
+
+  function _MP(menuid,targetUrl) {
+    $("#rightMain").attr('src', targetUrl);
+
+    /**$.get(targetUrl,function(data){
+        $("#content").html(data); }//返回的data是字符串类型
+    );**/
+  }
+
+  _M(5);
+
+
+     // menuson(2);
+	  /**function menuson(dataId){
+	  	var menuHtml="";
+	  	$.ajax({    
+			    url:'{:U('Index/adminMenu')}',   
+			    data:{'pid':dataId},    
+			    type:'post',    
+			    cache:false,    
+			    dataType:'json',    
+			    success:function(data) {
+			    	$.each(data,function(i) { 
+			    		 menuHtml +="<li><cite></cite><a href=\"index.html\" class=\"menuName\" />"+data[i].title+"</a><i></i></li>";
+                    }); 
+                    $('.menuson').html(menuHtml);
+			    },error : function() {    
+			          console.log("异常！");    
+			    }    
+		 }); 
+	  }**/
+	</script>
+</body>
+</html>

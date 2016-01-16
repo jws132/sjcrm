@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{:C('WEB_SITE_TITLE')}</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content="{:C('WEB_SITE_KEYWORD')}" />
+<meta name="Description" content="{:C('WEB_SITE_DESCRIPTION')}" />
+<link rel="stylesheet" href="__CSS__/base.css" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+</head>
+<body>
+<header>
+    <div class="navbar clearfix pb20">
+    	<a href="/" class="logo"><img src="__IMG__/logo.png" border="0" alt="{:C('WEB_SITE_TITLE')}" width="250" /></a>
+    	<ul class="pt10">
+    		<li><a href="__ROOT__/">首页</a></li>
+            <jwsthink:nav name="vo">
+                <li>
+                    <a href="__MODULE__/{$vo.model}/index/id/{$vo.id}">{$vo.title}</a>
+                </li>
+            </jwsthink:nav>
+    		<!--li><a href="/Index/about.html">公司简介</a></li>
+    		<li><a href="/Index/cases.html">解决方案</a></li>
+    		<li><a href="/Index/pro.html">产品中心</a></li>
+    		<li><a href="#">代理产品</a></li>
+    		<li class="no"><a href="/Index/support.html">技术服务</a></li-->
+    	</ul>
+    </div>
+</header>
+<block name="body">
+</block>
+<div class="askbox">
+    有疑问或想了解更多，请咨询：{:C('NET_FWRX')}
+</div>
+<div class="con-bg">
+    <ul class="container clearfix pt30 pb30">
+        <li class="fl w300"><img src="__IMG__/logo.png" border="0" alt="{:C('WEB_SITE_TITLE')}" width="300"></li>
+        <li class="fr w750 f14 lh30">
+        © Copyright 2015 胜杰软件 All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;{:C('NET_NAME')}&nbsp;&nbsp;&nbsp;&nbsp;{:C('WEB_SITE_ICP')} </br>地址：{:C('NET_ADDR')}&nbsp;&nbsp;&nbsp;&nbsp;传真：{:C('NET_CHUANZHEN')}
+        </li>   
+    </ul>
+</div>
+<script src="__JS__/jquery-1.7.2.min.js"></script> 
+<script src="__JS__/scrolltop.js"></script>
+</body>
+</html>

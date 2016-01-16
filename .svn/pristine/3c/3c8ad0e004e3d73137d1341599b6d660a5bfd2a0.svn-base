@@ -1,0 +1,74 @@
+<?php
+// +----------------------------------------------------------------------
+// | TP-Admin [ 多功能后台管理系统 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2014-2015 http://www.jz07.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: 蒋文书 <jiangwenshu1990@126.com>
+// +----------------------------------------------------------------------
+
+namespace Admin\Model;
+use Think\Model;
+use Think\Upload;
+
+class ArticleModel extends Model {
+
+    protected $_auto = array(
+        array('createtime', NOW_TIME, self::MODEL_INSERT),
+        array('updatetime', NOW_TIME, self::MODEL_BOTH),
+    );
+
+    public function dataList(){
+        $list= $this->table('article a, channel c ,user u')->field('a.id,c.title as name,a.title,a.sort,c.status,a.hits,a.createtime,u.username')->where('a.category = c.id and a.uid=u.id')->order('a.sort asc, a.id desc')->select();
+        return $list;
+    }
+   
+    /**
+     * 添加和编辑
+     * @return id  获取id
+     * @author 蒋文书 <jiangwenshu1990@126.com>
+     */  
+    public function update($id = null){
+       $type=array();
+       //创建数据对象
+       $data = $this->create();
+       $setting = C('EDITOR_UPLOAD');
+       $this -> uploader = new Upload($setting, 'LOCAL');
+       $img = $this->uploader->upload();
+       if($img){
+        $data['img']=$img['img']['savepath'].$img['img']['savename'];  
+       }
+       $data['uid']=$_SESSION[C('USER_AUTH_KEY')];
+       if($id) {
+            $type = $this->where("id=".$id)->save($data);
+       }else{
+            $type = $this->add($data);
+       }  
+       return $type;
+    }
+
+   /**
+     * 删除
+     * @return id  获取id
+     * @author 蒋文书 <jiangwenshu1990@126.com>
+     */
+    public function del($id){
+        if(empty($id)){
+            $this->error='请选择要操作的数据!';
+        }
+        return $this->where("id=".$id)->delete();
+    }
+
+
+    /**
+     * 获取
+     * @return id  获取id
+     * @author 蒋文书 <jiangwenshu1990@126.com>
+     */  
+    public function getId($id){
+
+       return $this->find($id);
+    }
+
+}
+ 

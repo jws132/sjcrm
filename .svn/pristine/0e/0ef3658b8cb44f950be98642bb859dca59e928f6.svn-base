@@ -1,0 +1,35 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="main clearfix pt15">	 
+       <div class="clearfix mb20 f12">{$Think.lang.T_YPP}:{$Think.lang.T_HOME} >> {$Think.lang.T_PRODUCT} >> {$info.type|pro_list_type} >> {$info.pid|pro_list_pid}</div>
+	   	<dl class="meun" style="height:700px;">
+		<volist name="Think.config.PRO_LIST_TYPE" id="newsType" key="k">
+		   <dt>{$newsType}</dt>
+			  <volist name="list" id="l">
+		        <if condition="$l['type'] eq $k">
+		           <dd><a href="/Index/pro/type/{$l.type}/pid/{$l.id}.html">{$l.title}</a></dd>
+		        </if>
+		     </volist>
+		</volist>
+	    </dl>
+	 	<div class="fr w730">	
+	 	    <div class="col-title"><empty name="id">{$Think.lang.T_PRODUCT}<else/>{$info.pid|pro_list_pid}</empty></div>
+	 	    <div class="clearfix pt20">
+	 	    	<div class="w355 fl"><img src="__ROOT__/Uploads/Editor/{$info.pic}" style="width:100%;" border="0" alt="{$info.title}"></div>
+	 	    	<ul class="w300 fl f12 pro-def ml30">
+	 	    		<li>{$Think.lang.CPBH}：<font color="#ff6600">{$info.number}</font></li>
+	 	    		<li>{$Think.lang.CPNC}：<font color="#ff6600">{$info.title}</font></li>
+	 	    		<li>{$Think.lang.GG}：<font color="#ff6600">{$info.spec}</font></li>
+	 	    		<li>{$Think.lang.BZ}：<font color="#ff6600">{$info.des}</font></li>
+	 	    		<li>{$Think.lang.CPLB}：<font color="#ff6600">{$info.type|pro_list_type}</font></li>
+	 	    		<li>{$Think.lang.YLCS}：<font color="#ff6600">{$info.view}</font></li>
+	 	    		<!--li>{$Think.lang.DATA}：<font color="#ff6600">{$info.create_time|date='Y-m-d',###}</font></li-->
+	 	    	</ul>
+	 	    </div>
+	 	    <div class="clearfix col-data mt10 fb">&nbsp;&nbsp;{$Think.lang.PRODES}</div>
+            <div class="col-conter">{$info.conter|htmlspecialchars_decode}</div>
+            <div class="col-conter tc f12" style="border-top:1px solid #ddd;">【<a href='javascript:window.print()' class="black">打印此页</a>】&nbsp;【<a href="javascript:self.close()" class="black">关闭</a>】</div>
+	 	</div>
+ 
+</div>
+</block>

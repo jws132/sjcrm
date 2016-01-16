@@ -1,0 +1,26 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="main clearfix pt15">
+	<div class="fl w700">
+	 	    <div class="clearfix mb20 f12">{$Think.lang.T_YPP}: {$Think.lang.T_HOME} >> <empty name="id">{$Think.lang.T_CASE}<else/>{$Think.lang.T_CASE} >>{$id|case_list_type}</empty></div>
+	 		<div class="col-title"><empty name="id">{$Think.lang.T_CASE}<else/>{$id|case_list_type}</empty></div>
+            <ul class="case_list pt10 pb10">
+                <volist name="list" id="vo" empty="暂时没有数据">
+                    <li class="tc"><a href="/Index/cdef/id/{$vo.id}.html" class="pic" title="{$vo.title}"><img src="__ROOT__/Uploads/Editor/{$vo.pic}" width="180" height="150" border="0" alt="{$vo.title}"></a><a href="/Index/cdef/id/{$vo.id}.html" target="_blank" class="lh30"  title="{$vo.title}">{$vo.title}</a></li>
+                </volist>
+            </ul>
+             <div class="page">
+               {$page}
+            </div>
+	 	</div>
+        <div class="fr w290 pr">
+	 	    <div class="a-m-r">{$Think.lang.T_CASE}</div>
+	 		<div class="w250 w-a-bj pt70 ml10 p10">
+	 		   <ul class="about-meun pt5 mb10">
+                    <volist name="Think.config.CASE_LIST_TYPE" id="newsType"><li><a href="/Index/cases/pid/{$key}.html">{$newsType}</a></li> </volist>
+	 		   </ul>
+	 		  <include file="Public/net" />
+	 		</div>
+	</div>  
+</div>
+</block>

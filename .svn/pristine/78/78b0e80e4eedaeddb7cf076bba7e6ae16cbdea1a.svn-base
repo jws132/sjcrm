@@ -1,0 +1,18 @@
+[ 2015-11-03T11:33:11+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.004786s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000537s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000323s ]
+
+[ 2015-11-03T11:33:13+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005090s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000595s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000469s ]
+

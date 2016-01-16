@@ -1,0 +1,56 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+              <a class="btn btn-mini"  href="{:U('AddCase',array('pid'=>I('get.pid')))}">新增</a>          
+             </div>
+           </div>
+          <div class="widget-content ">
+            <ul class="nav nav-tabs">
+              <volist name="Think.config.CASE_LIST_TYPE" id="newsType">
+               <li <if condition="$news_id eq $key">class="active"</if> ><a href="{:U('IndexCase',array('pid'=>$key))}">{$newsType}</a></li>
+              </volist>
+            </ul>
+            <table class="table table-bordered table-striped with-check">
+                <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>名称</td>
+                    <td>发布时间</td>
+                    <td>语言</td>
+                    <td>操作员</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                 <volist name="list" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</td>
+                    <td>{$vo.create_time|date='Y-m-d',###}</td>
+                    <td><if condition="$vo['lang'] eq 'zh-cn'"><img src="__IMG__/zh-cn.png"><else/><img src="__IMG__/en-us.png" ></if></td>
+                    <td>{$vo.userId|get_user}</td>
+                    <td><if condition="$vo['status']">开启<else/>关闭</if></td>
+                    <td><a href="{:U('EditCase',array('id'=>$vo['id'],'pid'=>$vo['pid']))}">编辑</a> | <a href="{:U('delCase',array('id'=>$vo['id'],'pid'=>$vo['pid']))}">删除</a></td>
+                    </tr>
+                 </volist>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+

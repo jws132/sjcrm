@@ -1,0 +1,25 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="main clearfix pt15">	 
+	 	<div class="fl w700">
+	 	    <div class="clearfix mb20 f12">{$Think.lang.T_YPP}:{$Think.lang.T_HOME} >> {$Think.lang.T_NEWS} >> {$info.pid|news_list_type}</div>
+	 		<div class="col-title" style="height:10px;"></div>
+	 		<div class="tc col-h1">{$info.title}</div>
+	 		<div class="col-data tc">发布者：管理员 {$Think.lang.DATA}：{$info.create_time|date='Y-m-d',###} {$Think.lang.YLCS}：<font color="red">{$info.view}</font>次 </div>
+            <div class="col-conter">{$info.conter|htmlspecialchars_decode}</div>
+	 	</div>
+        <div class="fr w290 pr">
+	 	    <div class="a-m-r">{$Think.lang.T_ABOUT}</div>
+	 		<div class="w250 w-a-bj pt70 ml10 p10">
+	 		   <ul class="about-meun pt5 mb10">
+                     <li><a href="/Index/about/id/1.html">{$Think.lang.T_ID_1|along_type}</a></li>
+                     <li><a href="/Index/about/id/5.html">{$Think.lang.T_ID_5|along_type}</a></li>
+                     <li><a href="/Index/about/id/6.html">{$Think.lang.T_ID_6|along_type}</a></li>
+                     <li><a href="/Index/about/id/7.html">{$Think.lang.T_ID_7|along_type}</a></li>
+                     <li><a href="/Index/about/id/8.html">{$Think.lang.T_ID_8|along_type}</a></li>
+	 		   </ul>
+	 		  <include file="Public/net" />
+	 		</div>
+	 	</div>  
+</div>
+</block>

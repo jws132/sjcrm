@@ -1,0 +1,101 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="con-bg">
+     <div class="container pro pt40 pb40">
+     	<h2>中小企业呼叫中心一体机</h2>
+     	  <div class="clearfix pt30">
+     	      <div class="w300 fl"><img src="__IMG__/yd_hjzx_img1.png"  /></div>
+     	      <div class="w750 fr">
+     	      	<h3>适合客户：<em>电话营销型，投资理财型，产品推广型</em></h3>
+<p class="con">高效沟通、简单易用、费用透明，让您的电话销售团队即刻提升战斗力<br>当您有一些销售人员跟客户有大量的电话沟通时，不妨试试用我们的电销系统来提高效率让销售管理变简单。</p>
+<div class="con_box">
+                    <h3>平台系列</h3>
+                    <ul class="list pt15">
+                        <li><a href="#">一体机管户管理平台系统</a></li>
+                        <li><a href="#">一体机呼叫中心语音平台系统</a></li>
+                    </ul>
+                </div>
+     	      </div>
+            
+         </div>
+     </div>
+</div>
+<div>
+     <div class="container pro pt40 pb40">
+     	<h2>呼叫中心客服平台系统</h2>
+     	  <div class="clearfix pt30">
+     	      <div class="w300 fl"><img src="__IMG__/yd_hjzx_img2.jpg"  /></div>
+     	      <div class="w750 fr">
+     	      	<h3>适合客户：<em>电话营销型，投资理财型，产品推广型</em></h3>
+<p class="con">高效沟通、简单易用、费用透明，让您的电话销售团队即刻提升战斗力<br>当您有一些销售人员跟客户有大量的电话沟通时，不妨试试用我们的电销系统来提高效率让销售管理变简单。</p>
+<div class="con_box">
+                    <h3>平台系列</h3>
+                    <ul class="list pt15">
+                        <li><a href="#">物流、快递呼叫中心系统</a></li>
+                        <li><a href="#">金融保险行业、电话营销系统</a></li>
+                        <li><a href="#">学校实训平台系统</a></li>
+                        <li><a href="#">电话营销平台系统</a></li>
+                        <li><a href="#">电视购物呼叫中心平台系统</a></li>
+                        <li><a href="#">家政服务网络中心系统</a></li>
+                        <li><a href="#">12319数字化城市管理平台系统</a></li>
+                        <li><a href="#">居家养老客服平台系统</a></li>
+                    </ul>
+                </div>
+     	      </div>
+            
+         </div>
+     </div>
+</div>
+<div class="con-bg">
+     <div class="container pro pt40 pb40">
+     	<h2>呼叫中心语音平台系统</h2>
+     	  <div class="clearfix pt30">
+     	      <div class="w300 fl"><img src="__IMG__/yd_hjzx_img3.png"  /></div>
+     	      <div class="w750 fr">
+     	      	<h3>适合客户：<em>电话营销型，投资理财型，产品推广型</em></h3>
+<p class="con">高效沟通、简单易用、费用透明，让您的电话销售团队即刻提升战斗力<br>当您有一些销售人员跟客户有大量的电话沟通时，不妨试试用我们的电销系统来提高效率让销售管理变简单。</p>
+<div class="con_box">
+                    <h3>平台系列</h3>
+                    <ul class="list pt15">
+                        <li><a href="#">呼叫中心语音CTI平台系统</a></li>
+                        <li><a href="#">呼叫中心语音后台话务报表</a></li>
+                        <li><a href="#">呼叫中心录音系统</a></li>
+                        <li><a href="#">IVR自助语音导航系统</a></li>
+                        <li><a href="#">呼叫中心ACD自动排队系统</a></li>
+                    </ul>
+                </div>
+     	      </div>
+            
+         </div>
+     </div>
+</div>
+
+	<div class="container">
+		<h2 class="title">我们的客户</h2>
+		<div class="case-title">
+		    <ul>
+		    	<li>作为全球首个互联网手机品牌，其推出的MIUI多年来一直赢得小米手机用户及海量刷机用户的厚爱，为让用户体验更好的通话服务，MIUI嵌入
+云通讯SDK，让"为发烧而生"延续。<p class="tr">-----百合网：中国婚恋交友第一社区</p></li>
+		    </ul>
+			<span class="case_mark1"></span>
+			<span class="case_mark2"></span>
+		</div>
+		<ul class="case-list clearfix pb20 pt15">
+			<li><img src="__IMG__/case-1.png" border="0" /></li>
+			<li><img src="__IMG__/case-2.png" border="0" /></li>
+			<li><img src="__IMG__/case-3.png" border="0" /></li>
+			<li><img src="__IMG__/case-4.png" border="0" /></li>
+			<li><img src="__IMG__/case-5.png" border="0" /></li>
+			<li><img src="__IMG__/case-6.png" border="0" /></li>
+			<li><img src="__IMG__/case-7.png" border="0" /></li>
+			<li><img src="__IMG__/case-8.png" border="0" /></li>
+			<li><img src="__IMG__/case-9.png" border="0" /></li>
+			<li><img src="__IMG__/case-10.png" border="0" /></li>
+			<li><img src="__IMG__/case-3.png" border="0" /></li>
+			<li><img src="__IMG__/case-1.png" border="0" /></li>
+		</ul>
+
+	</div>
+
+
+</block>

@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  
+  <div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+                    <form class="form-horizontal" form action="{:U('AddField')}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">字段名</label>
+                                        <div class="controls">
+                                            <input type="text" name="field" >
+                                            <span class="help-block">（请输入字段名 英文字母开头，长度不超过30）</span>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">字段名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="name" >
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">数据类型</label>
+                                          <div class="controls">
+                                            <select name="type">
+                                              <option value="">----请选择----</option>
+                                              <volist name=":get_attribute_type()" id="type">
+                                              <option value="{$key}" role="{$type[1]}" >{$type[0]}</option>
+                                              </volist>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">文本宽度</label>
+                                        <div class="controls">
+                                        <input type="text" name="text_size" >  
+                                         <span class="help-block">（编辑区域的宽度已1至12数字）</span>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">参数</label>
+                                        <div class="controls">
+                                        <textarea name="extra"></textarea>
+                                        <span class="help-block">（布尔、枚举、多选字段类型的定义数据）</span>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">帮助信息</label>
+                                        <div class="controls">
+                                        <input type="text" name="help" >  
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">排序</label>
+                                        <div class="controls">
+                                        <input type="text" name="sort" >  
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <input type="hidden" name="model_id" value="{$modelId}">
+                               <input type="hidden" name="is_channel" value="{$isChannel}">
+                                <input type="hidden" name="issystem" value="2">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+        </div>
+</block>

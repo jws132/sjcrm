@@ -1,0 +1,45 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+              <a class="btn"  href="{:U('Admin/Config/add')}">新增设置</a>
+             </div>
+           </div>
+          <div class="widget-content ">
+            <ul class="nav nav-tabs">
+             <volist name="Think.config.CONFIG_GROUP_LIST" id="group">
+              <li <if condition="$group_id eq $key">class="active"</if> ><a href="{:U('index?group='.$key)}">{$group}</a></li>
+             </volist>
+            </ul>
+            <table class="table table-bordered table-striped with-check">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>名称</th>
+					<th>标题</th>
+					<th>分组</th>
+					<th>类型</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+              <tbody>
+                 <volist name="list" id="config">
+					<tr>
+						<td>{$config.id}</td>
+						<td>{$config.name}</td>
+						<td>{$config.title}</td>
+						<td>{$config.group|get_config_group}</td>
+						<td>{$config.type|get_config_type}</td>
+						<td>
+							<a title="编辑" href="{:U('Admin/Config/edit',array('id'=>$config['id']))}">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="{:U('del?id='.$config['id'])}">删除</a>
+						</td>
+					</tr>
+                 </volist>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</block>

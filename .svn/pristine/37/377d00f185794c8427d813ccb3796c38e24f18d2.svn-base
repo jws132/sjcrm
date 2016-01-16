@@ -1,0 +1,12 @@
+               <a href="/Message/Index.html"><img src="__IMG__/contact.jpg" border="0"  width="250"/></a>
+	 		   <img src="__IMG__/contact1.gif" border="0"  width="250"/>
+	 		   <div class="lh30 pt10 f12">
+	    	    {$Think.lang.ADDRESS}：{:C('NET_ADD')}<br>
+				{$Think.lang.ZIP}：{:C('NET_YOUPIAN')}<br>
+				{$Think.lang.TELE}：{:C('NET_ZUOJI')}<br>
+				{$Think.lang.FAX}：{:C('NET_CHUANZHEN')}<br>
+				{$Think.lang.CONTACT}：{:C('NET_LXRDH')}<br>
+				{$Think.lang.HOT}：{:C('NET_FWRX')}<br>
+				{$Think.lang.NET}：{:C('NET_URL')}<br>
+				E-mial：{:C('NET_MAIL')}
+			    </div>

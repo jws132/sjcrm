@@ -1,0 +1,53 @@
+<extend name="Public/Base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+                 <a class="btn"  href="javascript:history.go(-1);">返回</a>
+             </div>
+           </div>
+          <div class="widget-content ">
+                    <form class="form-horizontal" form action="{:U('Add')}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">{$type}名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">{$type}描述</label>
+                                        <div class="controls">
+                                            <input type="text" name="title">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否开启</label>
+                                        <div class="controls">
+                                            <label><input type="radio" name="status" value="1" checked="checked"> 开启</label>
+                                            <label><input type="radio" name="status" value="0"> 关闭</label>
+                                        </div>
+                                    </div>
+                                     <div class="control-group">
+                                        <label class="control-label">排序</label>
+                                        <div class="controls">
+                                            <input type="text" name="sort" value="10">
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <input type="hidden" name="pid" value="{$pid}">
+                              <if condition="($level eq 0)">
+                              <input type="hidden" name="level" value="1">
+                              <elseif condition="($level eq 1)"/>
+                              <input type="hidden" name="level" value="2">
+                              <elseif condition="($level eq 2)"/>
+                              <input type="hidden" name="level" value="3">
+                             </if>
+                 
+                               
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+        </div>
+</block>

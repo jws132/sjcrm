@@ -1,0 +1,174 @@
+[ 2015-10-20T13:20:59+08:00 ] 127.0.0.1 /Public/Admin/css/cloud.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-20T14:36:18+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/27.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T15:13:17+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/7.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T15:32:23+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/7.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T15:32:47+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/7.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T15:32:48+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/7.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T15:32:48+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/7.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T15:32:58+08:00 ] 127.0.0.1 /index.php/Home/Document/index/cid/7.html
+ERR: 无法加载控制器:Document
+
+[ 2015-10-20T16:15:16+08:00 ] 127.0.0.1 /page
+ERR: 模板不存在:./Application/Home/View/Page/index.html
+
+[ 2015-10-20T16:39:29+08:00 ] 127.0.0.1 /page
+ERR: 模板不存在:./Application/Home/View/Page/index.html
+
+[ 2015-10-20T16:39:31+08:00 ] 127.0.0.1 /page
+ERR: 模板不存在:./Application/Home/View/Page/index.html
+
+[ 2015-10-20T16:41:36+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:51:14+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:20+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:22+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:22+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:22+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:22+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:27+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:27+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:27+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:27+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T16:52:33+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:52:35+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:52:35+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:52:35+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:52:35+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:01+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:02+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:02+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:02+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:02+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:02+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:03+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:03+08:00 ] 127.0.0.1 /page/index/about
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:11+08:00 ] 127.0.0.1 /page/index
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T16:55:29+08:00 ] 127.0.0.1 /page/index
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T17:05:21+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T17:12:37+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T17:15:21+08:00 ] 127.0.0.1 /page/about
+ERR: 非法操作:about
+
+[ 2015-10-20T17:16:03+08:00 ] 127.0.0.1 /page/class_id/7
+ERR: 非法操作:class_id
+
+[ 2015-10-20T17:16:20+08:00 ] 127.0.0.1 /page/index/class_id/7
+ERR: Think\Model:getInfo方法不存在！
+
+[ 2015-10-20T17:16:36+08:00 ] 127.0.0.1 /page/index/class_id/7
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T17:18:04+08:00 ] 127.0.0.1 /index.php/Home/article/index/class_id/26
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:23:21+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/26
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:28:28+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/37
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:28:31+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/1
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:28:33+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/3
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:34:38+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/26
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:35:18+08:00 ] 127.0.0.1 /index.php/Home/page/index/id/29
+ERR: 模板不存在:./Application/Home/View/Page/contactUs.html
+
+[ 2015-10-20T17:37:17+08:00 ] 127.0.0.1 /index.php/Home/page/index/id/7
+ERR: 模板不存在:./Application/Home/View/Page/about.html
+
+[ 2015-10-20T17:43:47+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/37
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:44:25+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/37
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:46:05+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/37
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:47:00+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/37
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T17:47:04+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/37
+ERR: 无法加载控制器:Article
+
+[ 2015-10-20T18:07:00+08:00 ] 127.0.0.1 /newsFindbyid?id=38
+ERR: 无法加载控制器:NewsFindbyid
+
+[ 2015-10-20T18:10:05+08:00 ] 127.0.0.1 /index.php/Home/article/index/id/26
+ERR: 模板不存在:./Application/Home/View/Article/article_news.html
+

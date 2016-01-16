@@ -1,0 +1,78 @@
+<extend name="Public/base"/>
+<extend name="Public/base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+              <a class="btn btn-mini"  href="{:U('NewsType',array('Type'=>$type,'doType'=>Add))}">新增</a>          
+             </div>
+           </div>
+            <div class="widget-content ">
+                    <form class="form-horizontal" action="{:U('NewsType',array('Type'=>$type,'doType'=>$doType))}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="title" value="{$info.title}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否开启</label>
+                                        <div class="controls">
+                                            <label><input type="radio" name="status" value="1" <if condition="$info['status'] eq 1"> checked="checked" </if> > 开启</label>
+                                            <label><input type="radio" name="status" value="0" <if condition="$info['status'] eq 0"> checked="checked" </if> > 关闭</label>
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <input type="hidden" name="lang" value="{$langSet}">
+                               <notempty name="id"><input type="hidden" name="id" value="{$id}"></notempty>
+                               <input type="hidden" name="doType" value="{$doType}">
+                               <input type="hidden" name="type" value="{$type}">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+          <div class="widget-content ">
+            <table class="table table-bordered table-striped with-check">
+                <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>名称</td>
+                    <td>发布时间</td>
+                    <td>更新时间</td>
+                    <td>语言</td>
+                    <td>操作员</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                 <volist name="list" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</td>
+                    <td>{$vo.create_time|date='Y-m-d',###}</td>
+                    <td>{$vo.update_time|date='Y-m-d',###}</td>
+                    <td><if condition="$vo['lang'] eq 'zh-cn'"><img src="__IMG__/zh-cn.png"><else/><img src="__IMG__/en-us.png" ></if></td>
+                    <td>{$vo.userId|get_user}</td>
+                    <td><if condition="$vo['status']">开启<else/>关闭</if></td>
+                    <td><a href="{:U('NewsType',array('doType'=>'Edit','Type'=>$type,'id'=>$vo['id']))}">编辑</a> | <a href="{:U('delNews',array('id'=>$vo['id']))}">删除</a></td>
+                    </tr>
+                 </volist>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+

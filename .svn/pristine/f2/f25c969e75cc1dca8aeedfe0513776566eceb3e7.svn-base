@@ -1,0 +1,15 @@
+[ 2015-03-25T10:31:32+08:00 ] 127.0.0.1 /Index/Ndef/id/1.html
+ERR: Think\Model:getLaseSql方法不存在！
+
+[ 2015-03-25T10:34:05+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 无法加载控制器:Public
+
+[ 2015-03-25T10:34:11+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 无法加载控制器:Public
+
+[ 2015-03-25T16:42:36+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 无法加载控制器:Public
+
+[ 2015-03-25T16:42:43+08:00 ] 127.0.0.1 /Public/Static/js/jquery.min.js
+ERR: 无法加载控制器:Public
+

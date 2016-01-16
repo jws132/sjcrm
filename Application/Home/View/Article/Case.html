@@ -1,0 +1,37 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="page-ban" style=" background:url('__IMG__/case.png') #8CC63E no-repeat center top;">
+    <div class="container">
+      <h1 class="tr">{$channelInfo.title}</h1>
+      <p class="tr">{$channelInfo.name}</p>
+  </div>     
+</div>
+<volist name="list" id="vo" mod="2"> 
+<div class="{$mod==0?'con-bg':''}">
+     <div class="container case pt20 pb20">
+        <h2>{$vo.title}</h2>
+        <div class="clearfix">
+        <div class="{$mod==0?'fl':'fr'} w350 tc"><img src="__ROOT__/Uploads/Images/{$vo.img}"  alt="{$vo.title}"  height="300" width="300"/></div>
+            
+            <p class="w700 {$mod==0?'fr':'fl'} ml15">
+                {$vo.description}
+                            <p class="more" style=" text-align: {$mod==0?'right':'left'};">
+                              <a href="__MODULE__/article/Content/id/{$vo.id}">阅读全文</a>
+                            </p>
+            </p>
+        </div>
+     </div>
+</div>
+</volist>
+
+ <div class="page">{$page}</div>
+<div class="container pt20 clearfix">
+    <div class="fl w650 tc">
+       <img src="__IMG__/new-b.png" border="0" />
+    </div>
+    <div class="fr w400 tc pb15">
+        <h1 style="font-size:30px;" class="pt70 pb50">赶紧申请试用吧？还等什么</h1>
+<a href="/" class="btn pt10 pr50 pb10 pl50 ">立即申请试用</a>
+    </div>
+</div>
+</block>

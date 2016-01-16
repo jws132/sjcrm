@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  <div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">数据表</a></li>
+    <li><a href="#">基本内容</a></li>
+    </ul>
+    </div>
+    
+    <div class="rightinfo">
+    <div class="tools">
+      <ul class="toolbar">
+        <li><a href="{:U('edit')}" ><span><img src="__IMG__/t01.png" /></span>添加</a></li>
+      </ul>
+    </div>
+    
+    
+    <table class="tablelist">
+      <thead>
+      <tr>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>注册时间</th>
+                    <th>注册IP</th>
+                    <th>所属角色</th>
+                    <th>状态</th>
+                    <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="list" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.username}</td>
+                    <td>{$vo.reg_time|date='Y-m-d',###}</td>
+                    <td>{$vo.reg_ip}</td>
+                    <td><if condition="$vo['role'] eq 0">暂无角色<else/>{$vo.name}({$vo.remark})</if></td>
+                    <td><if condition="$vo['status'] eq 1">开启<else/>关闭</if></td>
+                    <td><a href="{:U('Edit',array('id'=>$vo['id']))}" title="编辑" class="edit"></a><a href="{:U('Del',array('id'=>$vo['id']))}" title="删除" class="del"></a></td>
+                    </tr>
+                 </volist>
+
+        </tbody>
+    </table>
+</div>
+  <script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+    </script>
+</body>
+</html>

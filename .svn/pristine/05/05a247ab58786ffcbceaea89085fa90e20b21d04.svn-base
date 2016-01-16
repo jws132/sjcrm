@@ -1,0 +1,147 @@
+<?php
+// +----------------------------------------------------------------------
+// | TP-Admin [ 多功能后台管理系统 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2014-2015 http://www.jz07.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: 蒋文书 <jiangwenshu1990@126.com>
+// +----------------------------------------------------------------------
+
+namespace Admin\Controller;
+use Think\Controller;
+
+
+class PublicController extends Controller{
+    
+    /**
+     * 顶部菜单
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */    
+    public function index(){
+        //验证USER_AUTH_KEY
+        if(!isset($_SESSION[C('USER_AUTH_KEY')])) {
+            $this->display("login");
+        }else{
+            $model = D("Menu");
+            //超级管理员权限
+            if($_SESSION[C('ADMIN_AUTH_KEY')]){
+                $navList = $model->where("pid = 1 AND status = 1")->order('sort asc, id desc')->order('node.sort asc, node.id desc')->select();
+            }else{
+               $navList = $model->table( C('DB_PREFIX') . 'access as access, ' . C('DB_PREFIX') . 'node as node')->where("node.pid = 1 AND node.status = 1 AND node.id = access.node_id AND access.role_id = {$_SESSION['user_info']['role']}")->order('node.sort asc, node.id desc')->select();
+              
+            }      
+           $role = D('Role')->find($_SESSION['user_info']['role']);
+           //获取管理员名称
+           $_SESSION['user_info']['name'] = $role['remark'];
+           $this->assign('navList', $navList);
+           $this->display();
+        }
+    }
+     /**
+     * 左侧菜单
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */    
+    public function left() {
+        // 菜单显示自定义方式
+        $mid = empty($_GET['mid']) ? 1 : $_GET['mid'];
+        $model = D("Menu");
+        //超级管理员
+        if ($_SESSION[C('ADMIN_AUTH_KEY')]) {
+            $menulist = $model->where("pid = %d AND status = 1", $mid)->order('sort')->order('node.sort asc, node.id desc')->select();
+        } else {
+            $menulist = $model->table( C('DB_PREFIX') . 'access as access, ' . C('DB_PREFIX') . 'node as node')->where("node.pid = %d AND node.status = 1 AND node.id = access.node_id AND access.role_id = %d ", array($mid, $_SESSION['user_info']['role']))->order('node.sort asc, node.id desc')->select();
+        }
+        //左侧菜单多级菜单显示
+        /**foreach ($menulist as $key => $value) {
+            if ($_SESSION[C('ADMIN_AUTH_KEY')]) {
+                $childs = $model->where( array( 'pid' => $value['id'], 'status' => 1 ) )->order('sort desc')->select();
+            } else {
+                $childs = $model->table( C('DB_PREFIX') . 'access as access, ' . C('DB_PREFIX') . 'node as node')->where("node.pid = {$value['id']} AND node.status = 1 AND node.id = access.node_id AND access.role_id = {$_SESSION['user_info']['role']}")->order('node.sort desc')->select();
+            }
+            $menulist[$key]['childs'] = $childs;
+        }**/
+        $menu=$model->where('id='.$mid)->getField('title',true);
+        $menulist['menu']=$menu;
+        //返回json数据
+        $this->ajaxReturn($menulist,'JSON');
+    }
+
+    public function login() {
+        //验证是否登录
+        if(!isset($_SESSION[C('USER_AUTH_KEY')])) {
+            $this->display();
+        }else{
+            header("Location:".__MODULE__.'/Public/Index');
+        }
+    }
+
+    /**
+     * 登陆
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */
+    public function checkLogin(){
+        $username=I('username');
+        $password=I('password','','md5');
+
+        // 生成认证条件
+        $map = array();
+        $map['username'] = $username;
+
+        $data = array();
+        $data['last_login_ip']    = get_client_ip();
+        $data['last_login_time']  = time();
+        $data['username'] = $username;
+        $data['module'] = MODULE_NAME;
+        $data['action'] = ACTION_NAME;
+        $data['querystring'] = U( MODULE_NAME . '/' . ACTION_NAME );
+        $RBAC = new \Org\Util\Rbac();
+
+        $authInfo = $RBAC::authenticate($map);
+        //使用用户名、密码和状态的方式进行认证
+        if(false === $authInfo) {
+            $data['status'] = 0;
+            D("Log")->add( $data );
+            $this->error('帐号不存在或已禁用！',__MODULE__ . C('USER_AUTH_GATEWAY'));
+        }else{
+          if($authInfo['password'] != $password ) {
+                $data['status'] = 0;
+                D("Log")->add( $data );
+                $this->error('密码错误',__MODULE__ . C('USER_AUTH_GATEWAY'));
+            }
+
+        } 
+            $_SESSION['user_info'] = $authInfo;
+            $_SESSION[C('USER_AUTH_KEY')] = $authInfo['id'];
+            $_SESSION['last_login_time'] = $authInfo['last_login_time'];
+
+           if($authInfo['username']==C('RBAC_SUPERADMIN')){
+                $_SESSION[C('ADMIN_AUTH_KEY')]=true;
+            }
+            //保存登录信息
+            D('User')->where( array( 'id' => $authInfo['id'] ) )->save( array( 'last_login_time' => time(), 'last_login_ip' => $data['id'] ) );
+
+            //保存日志
+            $data['status'] = 1;
+            $data['userid'] = $authInfo['id'];
+            D("Log")->add( $data );
+            //存储访问权限
+            $RBAC::saveAccessList();
+            $this->success('登录成功！',__MODULE__.'/Public/Index');
+    }
+
+    /**
+     * 退出登录
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */
+    public function logout(){
+        if(isset($_SESSION[C('USER_AUTH_KEY')])) {
+            unset($_SESSION[C('USER_AUTH_KEY')]);
+            unset($_SESSION);
+            session_destroy();
+            $this->success('登出成功！',__CONTROLLER__.'/login/');
+        }else {
+            $this->error('已经登出！');
+        }
+    }
+
+}

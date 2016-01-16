@@ -1,0 +1,139 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+
+class IndexController extends Controller {
+
+     public function _initialize(){
+    
+
+        $this -> linksList = M('News')->where(array('type'=>3,'status'=>1,'lang'=>LANG_SET))->select();
+        /* 读取数据库中的配置 */
+        $config =   D('Config')->lists();
+        C($config); //添加配置
+   }
+
+    public function index(){
+
+        $this->display();
+    }
+
+    public function home(){
+        $this -> navList = M('Along')->where(array('type'=>'Pro','lang'=>LANG_SET))->select();
+        $this -> list = M('Pro')->where(array('p'=>1,'status'=>1,'lang'=>LANG_SET))->select();
+        $this -> newsList = M('News')->where(array('type'=>1,'status'=>1,'lang'=>LANG_SET))->limit(8)->select();
+        $this->display();
+    }
+
+    public function about(){
+
+        $this->display();
+    }
+
+    public function news(){
+        //$this -> navList = M('Along')->where(array('lang'=>LANG_SET,'status'=>1,'type'=>'News'))->select();
+    	$id=I('get.pid');
+        $map  = array('status'=>1,'lang'=>LANG_SET,'type'=>1,'pid'=>1);
+        if(!empty($id)){
+            $map['pid']=$id; 
+        }
+	    $count      = M('News')->where($map)->count();// 查询满足要求的总记录数 $map表示查询条件
+	    $Page = new  \Think\Page($count, 10);// 实例化分页类 传入总记录数（这是根据@979137的意见修改的，这个建议非常好！）
+	    $show       = $Page->show();// 分页显示输出
+	    $orderby['id']='desc';
+	    $list = M('News')->where($map)->order($orderby)->limit($Page->firstRow.','.$Page->listRows)->select();
+ 
+        $this->assign('list',$list);// 赋值数据集
+        $this->assign('id',$id);// 赋值数据集
+	    $this->assign('page',$show);// 赋值分页输出
+    	$this->display();
+    }
+
+
+    public function pro(){
+        //$this -> navList = M('Along')->where(array('type'=>'Pro','lang'=>LANG_SET))->select();
+        $this -> list = M('Pro')->where(array('p'=>1,'status'=>1,'lang'=>LANG_SET))->select();
+        $map = array();
+        $map  = array('p'=>2,'status'=>1,'lang'=>LANG_SET);
+        if(isset($_GET['pid'])){
+            $map['pid']   =   I('pid',1); 
+        }
+        $count      = M('Pro')->where($map)->count();// 查询满足要求的总记录数 $map表示查询条件
+        $Page = new  \Think\Page($count, 10);// 实例化分页类 传入总记录数（这是根据@979137的意见修改的，这个建议非常好！）
+        $show       = $Page->show();// 分页显示输出
+        $orderby['id']='desc';
+        $proList = M('Pro')->where($map)->order($orderby)->limit($Page->firstRow.','.$Page->listRows)->select();
+
+
+       $this->assign('proList',$proList);// 赋值数据集
+       $this->assign('type',I('get.type',0));// 赋值数据集
+       $this->assign('pid',I('get.pid'));// 赋值数据集
+       $this->assign('page',$show);// 赋值分页输出*/
+       $this->display();
+    }
+
+    public function support(){
+        $this->display();
+    }
+
+
+    public function cases(){
+        $map = array();
+        $map  = array('type'=>2,'status'=>1,'lang'=>LANG_SET);
+        if(isset($_GET['pid'])){
+            $map['pid']   =   I('pid',1); 
+        }
+        $count      = M('News')->where($map)->count();// 查询满足要求的总记录数 $map表示查询条件
+        $Page = new  \Think\Page($count, 10);// 实例化分页类 传入总记录数（这是根据@979137的意见修改的，这个建议非常好！）
+        $show       = $Page->show();// 分页显示输出
+        $orderby['id']='desc';
+        $list = M('News')->where($map)->order($orderby)->limit($Page->firstRow.','.$Page->listRows)->select();
+
+        $this->assign('list',$list);// 赋值数据集
+        $this->assign('id',I('get.pid'));// 赋值数据集
+        $this->assign('page',$show);// 赋值分页输出
+        $this->display();
+    }
+
+    public function ndef(){
+       $id=I('get.id');
+        if($id){
+           M('News')->where(array('id' => $id))->setInc('view');
+           $info=M('News')->where(array('status'=>1))->find($id);
+        }
+        else{ 
+            $this->error('获取ID失败！');
+        }
+        $this->assign('info',$info);// 赋值数据集
+        $this->display();
+    }    
+
+    public function cdef(){
+       $id=I('get.id');
+        if($id){
+           M('News')->where(array('id' => $id))->setInc('view');
+           $info=M('News')->where(array('status'=>1))->find($id);
+        }
+        else{ 
+            $this->error('获取ID失败！');
+        }
+        $this->assign('info',$info);// 赋值数据集
+        $this->display();
+    } 
+
+    public function prodef(){
+        $this -> list = M('Pro')->where(array('p'=>1,'status'=>1,'lang'=>LANG_SET))->select();
+        $id=I('get.id');
+        if($id){
+           M('Pro')->where(array('id' => $id))->setInc('view');
+           $info=M('Pro')->where(array('status'=>1))->find($id);
+        }
+        else{ 
+            $this->error('获取ID失败！');
+        }
+        $this->assign('id',$id);// 赋值数据集
+        $this->assign('info',$info);// 赋值数据集
+        $this->display();
+    } 
+
+}

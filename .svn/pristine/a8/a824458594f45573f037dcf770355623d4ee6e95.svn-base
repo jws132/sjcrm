@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+</head>
+<body>
+<div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+   <div class="formbody">
+<table cellspacing="0" width="100%" class="content_list">
+<tbody><tr><th width="50%" align="left" colspan="2">个人资料</th><th align="left" colspan="2" width="50%">系统信息</th></tr>
+<tr><td width="15%">用户名</td><td width="35%">admin</td><td width="15%">X6CMS版本</td><td width="35%">2.2(20130305)</td></tr>
+<tr><td width="15%">用户组</td><td width="35%">1</td><td width="15%">运行环境</td><td width="35%">Apache</td></tr>
+<tr><td width="15%">最后登录时间</td><td width="35%">2015-10-13 16:00:45</td><td width="15%">上传许可</td><td width="35%">10M</td></tr>
+<tr><td width="15%">最后登录ip</td><td width="35%">111.196.147.203</td><td width="15%">MYSQL版本</td><td width="35%">5.1.48-log</td></tr>
+<tr><td width="15%">登录次数</td><td width="35%">351</td><td width="15%">剩余空间</td><td width="35%">0M</td></tr>
+<tr><th width="50%" align="left" colspan="2">网站统计</th>
+  <th width="15%" align="left">官方动态</th>
+  <th width="35%" align="right"><a href="http://bbs.x6cms.com" target="_blank">Bug提交</a>&nbsp;&nbsp;&nbsp;<a href="http://www.x6cms.com" target="_blank">更多动态</a></th></tr>
+
+<tr><td width="15%">下载模型</td><td width="35%">4</td><td width="50%" style="padding:0;" colspan="2" rowspan="6"><iframe width="100%" style="margin: 0;" height="150" src="http://www.x6cms.com/help" frameborder="0" scrolling="no"></iframe></td></tr>
+<tr><td width="15%">文章模型</td><td width="35%">11</td></tr>
+<tr><td width="15%">产品模型</td><td width="35%">9</td></tr>
+<tr><td width="15%">问答模型</td><td width="35%">5</td></tr>
+<tr><td width="15%">招聘模型</td><td width="35%">0</td></tr>
+<tr><td width="15%">在线人数</td><td width="35%">1</td></tr>
+</tbody></table>
+  </div>
+  </body>
+  </html>

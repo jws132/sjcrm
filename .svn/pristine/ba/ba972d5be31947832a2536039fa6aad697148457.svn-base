@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  
+  <div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+    
+  <div class="formbody">
+                    <form class="form-horizontal" form action="{:U('Edit')}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">模板名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="name" value="{$info.name}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">模板前缀</label>
+                                        <div class="controls">
+                                            <input type="text" name="channel" value="{$info.channel}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否有内容</label>
+                                          <div class="controls">
+                                            <label><input type="radio" name="has_content" value="1" <if condition="$info['has_content'] eq 1"> checked="checked" </if> > 开启</label>
+                                            <label><input type="radio" name="has_content" value="0" <if condition="$info['has_content'] eq 0"> checked="checked" </if> > 关闭</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否开启</label>
+                                          <div class="controls">
+                                          <label><input type="radio" name="status" value="1" <if condition="($info['status'] eq 1)"> checked="checked" </if>> 开启</label>
+                                            <label><input type="radio" name="status" value="0" <if condition="($info['status'] eq 0)"> checked="checked" </if>> 关闭</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">排序</label>
+                                        <div class="controls">
+                                        <input type="text" name="sort" value="{$info.sort}">  
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                                <input type="hidden" name="model_id" value="{$info.model_id}">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+    </div>
+</body>
+</html>

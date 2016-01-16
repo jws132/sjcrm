@@ -1,0 +1,117 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/Public/Admin/css/style.css" />
+<style>
+.content_view{width:100%;height:100%;font-size:12px;}
+.content_view td{padding-top:5px;padding-bottom:5px;}
+.content_view td.upic{border-left:#eee 1px solid;text-align:center;}
+.content_view td.upic img{cursor:pointer;width:150px;height:150px;}
+</style>
+<script src="/Public/Static/js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+        window.UEDITOR_HOME_URL='/Public/ueditor/';
+        window.onload=function(){
+            window.UEDITOR_CONFIG.imageUrl = '<?php echo U('Editor');?>';
+            window.UEDITOR_CONFIG.imagePath = '/Uploads/Editor/';    
+        }
+        
+         /**function gradeChange(){
+         var objS = document.getElementById("selectId");
+         var typeid = objS.options[objS.selectedIndex].typeid;
+         alert(typeid);
+        }**/
+
+        $(function(){
+            var selectId=$("select[name=pid] option[selected]").attr('typeid');
+            $('#type').val(selectId);
+
+            $("#selectId").change(function(){
+                var type=$(this).find('option:selected').attr('typeid');
+                $('#type').val(type); 
+            });
+        });
+</script>
+
+</head>
+<body>
+  
+  <div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+    
+  <div class="formbody">
+<form action="<?php echo U('Add');?>" method="post">
+<table cellspacing="0" width="100%" class="content_view">
+  <tbody><tr>
+    <td>栏目名称</td>
+    <td><input type="text" name="title" class="dfinput" value="<?php echo ($info["title"]); ?>"></td>
+    <td>外部链接</td>
+    <td>是&nbsp;&nbsp;<input type="radio" name="isexternal" value="1" onclick="$('#externalurltr').show();">&nbsp;&nbsp;&nbsp;&nbsp;否&nbsp;&nbsp;<input type="radio" name="isexternal" value="0" checked="" onclick="$('#externalurltr').hide();"></td>
+    <td rowspan="6" class="upic" valign="top">
+    <!--img src="http://www.fjlzcy.com/data/attachment/image/20150818/8fa4738496484841cf27b173       9ccc4878.jpg" onclick="uploadpic(this,'thumb')" width="150" id="imgthumb"><input type="hidden" name="thumb" id="thumb" value="data/attachment/image/20150818/8fa4738496484841cf27b1739ccc4878.jpg"><br><input type="button" class="btn" onclick="unsetThumb('thumb','imgthumb')" value="取消图片"--> 
+    </td>
+  </tr>
+  <tr style="display:none;" id="externalurltr"><td>链接地址</td><td colspan="3"><input type="text" name="externalurl" id="externalurl" size="80" class="dfinput" value=""></td>
+  </tr><tr>
+    <td>栏目目录</td>
+    <td><input type="text" name="dir" id="dir" class="dfinput" value="<?php echo ($info["dir"]); ?>"></td>
+    <td>弹出方式</td>
+    <td>当前页&nbsp;&nbsp;<input type="radio" name="target" value="_self" checked="">&nbsp;&nbsp;&nbsp;&nbsp;新页面&nbsp;&nbsp;<input type="radio" name="target" value="_blank"></td>
+  </tr>
+  <tr><td>栏目模型</td>
+    <td><select name="model" class="dfinput">
+            <?php if(is_array($modelList)): $i = 0; $__LIST__ = $modelList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["channel"]); ?>" <?php if($info['model'] == $vo['channel']): ?>selected<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+        </select>
+    </td>
+    <td>上级栏目
+    </td><td>
+    <select name="parent" class="dfinput">
+      <option value="0">顶级栏目</option>
+      <?php if(is_array($channelList)): $i = 0; $__LIST__ = $channelList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($info['parent'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["title"]); ?></option>
+          <?php if(is_array($vo["child"])): $i = 0; $__LIST__ = $vo["child"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c): $mod = ($i % 2 );++$i;?><option value="<?php echo ($c["id"]); ?>" <?php if($info['parent'] == $c['id']): ?>selected<?php endif; ?> >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($c["title"]); ?></option>
+            <?php if(is_array($c["child"])): $i = 0; $__LIST__ = $c["child"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$e): $mod = ($i % 2 );++$i;?><option value="<?php echo ($e["id"]); ?>" <?php if($info['parent'] == $e['id']): ?>selected<?php endif; ?> >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($e["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>导航显示</td>
+    <td>是&nbsp;&nbsp;<input type="radio" name="isnavigation" value="1" checked="">&nbsp;&nbsp;&nbsp;&nbsp;否&nbsp;&nbsp;<input type="radio" name="isnavigation" value="0"></td>
+    <td>允许添加内容</td>
+    <td>是&nbsp;&nbsp;<input type="radio" name="isdisabled" value="0" checked="">&nbsp;&nbsp;&nbsp;&nbsp;否&nbsp;&nbsp;<input type="radio" name="isdisabled" value="1"></td>
+  </tr>
+  <tr><td>SEO标题</td><td colspan="3"><input type="text" name="name" style="width:82%;"  class="dfinput" value="<?php echo ($info["name"]); ?>"></td>
+  </tr><tr><td>SEO关键词</td><td colspan="3"><input type="text" name="keywords"style="width:82%;" class="dfinput" value="<?php echo ($info["keywords"]); ?>"></td>
+  </tr><tr><td>SEO描述</td><td colspan="3"><textarea style="width:82%; height:50px;" name="description" class="dfinput"><?php echo ($info["description"]); ?></textarea></td></tr>
+  <tr>
+    <td>内容</td>
+    <td colspan="4">
+                                         <script type="text/javascript">
+                                                  UE.getEditor('content');
+                                            </script>
+                                            <textarea name="content" id="content" style="height:400px; width:82%;"></textarea>
+    </td></tr>
+  <tr>
+  </tr><tr>
+    <td>分页条数</td>
+    <td><input type="text" name="pagesize" size="5" class="dfinput" value="<?php echo ($info["pagesize"]); ?>"></td>
+    <td>列表页模板</td>
+    <td colspan="2"><input type="text" name="tpllist" class="dfinput" value="<?php echo ($info["tpllist"]); ?>"></td>
+  </tr>
+  <tr>
+    <td>内容页模板</td>
+    <td><input type="text" name="tpldetail" class="dfinput" value="<?php echo ($info["tpldetail"]); ?>"></td>
+    <td>顺序</td>
+    <td colspan="2"><input type="text" name="sort" value="<?php echo ($info["sort"]); ?>" class="dfinput"></td>
+  </tr>
+    <tr><td></td><td colspan="3"><input type="hidden" name="id" value="<?php echo ($info["id"]); ?>"><button class="btn btn-primary" type="submit">保存</button></td>
+  </tr>
+  </tbody></table>
+ </form> 
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,79 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="clearfix b-index mb15">
+  <ul>
+     <li style=" background:url('__IMG__/ban-1.png') #3083eb no-repeat center top;"><a href="__ROOT__/index.php/Home/article/Content/id/32"></a></li>
+     <li style=" background:url('__IMG__/ban-2.png') #9FBBC7 no-repeat center top;"><a href="__ROOT__/index.php/Home/article/Content/id/28"></a></li>
+     <li style=" background:url('__IMG__/ban-3.png') #8CC63E no-repeat center top;"><a href="__ROOT__/index.php/Home/article/Content/id/27"></a></li>
+  </ul>
+   <ol>
+      <li class="current"></li>
+      <li></li>
+      <li></li>
+   </ol>
+</div>
+
+<div class="pro-list clearfix pt20 pb20">
+	<ul>
+	    <jwsthink:article parent="3" name="vo" limit='8' child="1" position="1">
+          <li>
+	    	<a href="__MODULE__/article/Content/id/{$vo.id}" title="{$vo.title}">
+	    	<img src="__ROOT__/Uploads/Images/{$vo.img}" border="0" height="150" alt="{$vo.title}"/></a>
+			<h4><a href="__MODULE__/article/Content/id/{$vo.id}" title="{$vo.title}">{$vo.title}</a></h4>
+			<p>{$vo.description}</p>
+          </li>
+        </jwsthink:article>
+	</ul>
+</div>
+
+<div class="con-bg">
+	<div class="container">
+		<h2 class="title">我们的客户</h2>
+		<div class="case-title">
+		    <ul>
+		    <jwsthink:article channel="40" name="vo" limit='1'>
+		    	<li>{$vo.description}<p class="tr">-----{$vo.title}</p></li>
+             </jwsthink:article>
+		    </ul>
+			<span class="case_mark1"></span>
+			<span class="case_mark2"></span>
+		</div>
+		<ul class="case-list clearfix pb20 pt15">
+		  <jwsthink:article channel="40" name="kh" limit='18'>
+			<li><img src="__ROOT__/Uploads/Images/{$kh.img}" border="0" height="150" width="150" alt="{$kh.title}" /></li>
+		   </jwsthink:article>
+		</ul>
+
+	</div>
+</div>
+
+<div class="container pt30 clearfix">
+	<div class="fl w550 index_list">
+		<h3>新闻中心</h3>
+		<ul class="pr30">
+		<jwsthink:article parent="37" name="vo" limit='7' child="1">
+            <li><a href="__MODULE__/article/Content/id/{$vo.id}" target="_blank" title="{$vo.title}">{$vo.title}</a><span>{$vo.createtime|date='Y-m-d',###}</span></li>
+	    </jwsthink:article>
+	    </ul>
+	</div>
+	<div class="fr w550 tc"><img src="__IMG__/new-r.jpg" border="0" /></div>
+</div>
+<div class="container pt20 clearfix">
+	<div class="dotted_line clearfix"></div>
+	<div class="fl w650 tc">
+	   <img src="__IMG__/new-b.png" border="0" />
+	</div>
+	<div class="fr w400 tc pb15">
+		<h1 style="font-size:30px;" class="pt70 pb50">赶紧申请试用吧？还等什么</h1>
+<a href="/" class="btn pt10 pr50 pb10 pl50 ">立即申请试用</a>
+	</div>
+</div>
+
+<!--百度推广-->
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5e06781eea22792d959956c3d7c5851f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</block>

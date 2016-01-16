@@ -1,0 +1,203 @@
+[ 2015-11-26T09:49:56+08:00 ] 127.0.0.1 /admin.php/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005646s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000560s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000349s ]
+
+[ 2015-11-26T09:50:07+08:00 ] 127.0.0.1 /admin.php/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005749s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000601s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000397s ]
+
+[ 2015-11-26T09:50:45+08:00 ] 127.0.0.1 /admin.php/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005707s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000550s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000386s ]
+
+[ 2015-11-26T10:06:14+08:00 ] 127.0.0.1 /admin.php/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005135s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000517s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000374s ]
+
+[ 2015-11-26T10:06:16+08:00 ] 127.0.0.1 /admin.php/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005731s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000604s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000397s ]
+
+[ 2015-11-26T12:02:49+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003159s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000469s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000324s ]
+
+[ 2015-11-26T12:02:51+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003038s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000337s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000205s ]
+
+[ 2015-11-26T12:02:56+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002299s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003413s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000390s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000193s ]
+
+[ 2015-11-26T12:05:57+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003176s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000371s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000239s ]
+
+[ 2015-11-26T12:05:58+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005745s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000628s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000401s ]
+
+[ 2015-11-26T12:05:59+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005861s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000693s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000407s ]
+
+[ 2015-11-26T13:43:01+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003694s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000384s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000221s ]
+
+[ 2015-11-26T13:43:02+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006088s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000553s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000350s ]
+
+[ 2015-11-26T14:06:25+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003675s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 4 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000359s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=4 )  [ RunTime:0.000210s ]
+
+[ 2015-11-26T14:06:26+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003126s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 4 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000320s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=4 )  [ RunTime:0.000235s ]
+
+[ 2015-11-26T14:06:34+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003512s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 2 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000460s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=2 )  [ RunTime:0.000259s ]
+
+[ 2015-11-26T14:06:49+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005714s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000545s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000339s ]
+
+[ 2015-11-26T14:06:50+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003386s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005625s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000565s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000358s ]
+
+[ 2015-11-26T14:07:02+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006043s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 2 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000619s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=2 )  [ RunTime:0.000337s ]
+
+[ 2015-11-26T14:07:04+08:00 ] 127.0.0.1 /admin.php/Public/left/mid/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+NOTIC: [8] A session had already been started - ignoring session_start() G:\jwscms\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.006039s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 2 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000598s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=2 )  [ RunTime:0.000337s ]
+
+[ 2015-11-26T14:07:20+08:00 ] 127.0.0.1 /admin.php/auth/ddit/id/1.html
+ERR: 非法操作:ddit
+

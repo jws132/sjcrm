@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  
+  <div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+  <div class="rightinfo">
+  <ul class="forminfo">
+                    <form class="form-horizontal" form action="{:U('editField')}" method="post">
+                                    <li><label>字段名</label>
+                                        <if condition="$info['issystem'] eq 2">
+                                    <input type="text" name="name" class="dfinput" value="{$info.field|default=''}"><i>（请输入字段名 英文字母开头，长度不超过30）</i>
+                                               <else/>
+                                                <input type="text" name="field" value="{$info.field}" class="dfinput" disabled>
+                                            </if>
+                                            </li>
+                                     <li><label>字段名称</label><input type="text" name="name"  class="dfinput" value="{$info.name}"></li>
+                                     <li><label>数据类型</label>
+                                          <if condition="$info['issystem'] eq 2">
+                                           <div class="vocation">
+                                            <select name="type" class="dfselect" >
+                                              <option value="">----请选择----</option>
+                                              <volist name=":get_attribute_type()" id="type">
+                                              <option value="{$key}" role="{$type[1]}" <if condition="$info['type'] eq $key">selected="selected"</if> >{$type[0]}</option>
+                                              </volist>
+                                            </select>
+                                            </div>
+                                            <else/>
+                                                <input type="text"  class="dfinput" name="type" value="{:get_attribute_type($info['type'])}" disabled>
+                                            </if>
+
+                                        </li>
+                                   <li><label>文本宽度</label><input type="text"  class="dfinput" name="text_size" value="{$info.text_size}"><i>（编辑区域的宽度已1至12数字）</i></li>
+                                   <li><label>参数</label><textarea name="extra" style="height:50px;"  class="dfinput">{$info.extra}</textarea><i>（布尔、枚举、多选字段类型的定义数据）</i></li>
+                                    <li><label>帮助信息</label><input type="text"  class="dfinput" name="help" value="{$info.help}"> </li>
+                                    <li><label>排序</label><input type="text"  class="dfinput" name="sort" value="{$info.sort}"> </li>
+                               <div class="form-actions">
+                                <input type="hidden" name="field_id" value="{$info.field_id}">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+                     </div>
+    </div>
+</body>
+</html>

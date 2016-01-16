@@ -1,0 +1,76 @@
+<extend name="Public/base"/>
+<block name="body">
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+        window.UEDITOR_HOME_URL='__PUBLIC__/ueditor/';
+        window.onload=function(){
+            window.UEDITOR_CONFIG.imageUrl = '{:U('Editor')}';
+            window.UEDITOR_CONFIG.imagePath = '__ROOT__/Uploads/Editor/';    
+        }
+</script>
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+                 <a class="btn btn-mini"  href="javascript:history.go(-1);">返回</a>
+             </div>
+           </div>
+          <div class="widget-content ">
+                    <form class="form-horizontal" action="{:U('EditLinks')}" method="post" enctype="multipart/form-data" >
+                                                                       <div class="control-group">
+                                        <label class="control-label">网站名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="title" value="{$info.title|default=''}" style=" width:480px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">站长名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="name" value="{$info.name|default=''}"  style=" width:480px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label">网站链接</label>
+                                        <div class="controls">
+                                            <input  type="text" name="url" value="{$info.url|default=''}"  style=" width:480px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">网站简介</label>
+                                        <div class="controls">
+                                            <textarea name="conter" style=" width:480px;">{$info.conter|default=''}</textarea>
+                                        </div>
+                                    </div>
+                                    <if condition="$info['pic'] neq ''">
+                                    <div class="control-group">
+                                        <label class="control-label">展示</label>
+                                        <div class="controls">
+                                            <img src="__ROOT__/Uploads/Editor/{$info.pic}" border="0" width="200" />
+                                        </div>
+                                    </div>
+                                    </if>
+                                    <div class="control-group">
+                                        <label class="control-label">LOGO</label>
+                                        <div class="controls">
+                                            <input type="file" name="pic" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否开启</label>
+                                        <div class="controls">
+                                            <label><input type="radio" name="status" value="1" <if condition="$info['status'] eq 1"> checked="checked" </if> > 开启</label>
+                                            <label><input type="radio" name="status" value="0" <if condition="$info['status'] eq 0"> checked="checked" </if> > 关闭</label>
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <input type="hidden" name="id" value="{$info.id|default=''}">
+                               <input type="hidden" name="userId" value="{$userId}">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+        </div>
+</block>

@@ -1,0 +1,61 @@
+<extend name="Public/base"/>
+<block name="body">
+<script>
+ $(function(){
+  $('input[name=has_content]').click(function() {
+      var has_content=$(this).val();
+       if(has_content==1){
+        $("#conter_tpl").show()
+       }else{
+        $("#conter_tpl").hide()
+       }
+  });
+ })
+</script>
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+                 <a class="btn"  href="javascript:history.go(-1);">返回</a>
+             </div>
+           </div>
+          <div class="widget-content ">
+                    <form class="form-horizontal" form action="{:U('Add')}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">模板名称</label>
+                                        <div class="controls">
+                                            <input type="text" name="model_name">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">栏目模板前缀</label>
+                                        <div class="controls">
+                                            <input type="text" name="tpl_channel">
+                                        </div>
+                                    </div>
+                                    <div class="control-group" id="conter_tpl">
+                                        <label class="control-label">内容模板前缀</label>
+                                        <div class="controls">
+                                        <input type="text" name="tpl_content">	
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否开启</label>
+                                          <div class="controls">
+                                            <label><input type="radio" name="status" value="1" checked="checked"> 开启</label>
+                                            <label><input type="radio" name="status" value="0"> 关闭</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">排序</label>
+                                        <div class="controls">
+                                        <input type="text" name="sort" value="10">  
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+        </div>
+</block>

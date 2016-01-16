@@ -1,0 +1,21 @@
+[ 2015-11-06T13:45:27+08:00 ] 127.0.0.1 //admin/login
+ERR: 无法加载控制器:Login
+
+[ 2015-11-06T13:45:44+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001991s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.007449s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 5 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000845s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=5 )  [ RunTime:0.000441s ]
+
+[ 2015-11-06T13:45:45+08:00 ] 127.0.0.1 /index.php/Admin/Public/Left/mid/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.005058s ]
+SQL: SELECT * FROM `node` WHERE ( pid = 3 AND status = 1 ) ORDER BY node.sort asc, node.id desc  [ RunTime:0.000646s ]
+SQL: SELECT `title` FROM `node` WHERE ( id=3 )  [ RunTime:0.000325s ]
+

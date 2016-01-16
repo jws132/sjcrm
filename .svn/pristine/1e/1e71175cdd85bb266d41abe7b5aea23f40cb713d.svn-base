@@ -1,0 +1,45 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+                 <a class="btn btn-mini"  href="javascript:history.go(-1);">返回</a>
+             </div>
+           </div>
+          <div class="widget-content ">
+                    <form class="form-horizontal" <form action="{:U('Admin/User/Add')}" method="post">
+                                    <div class="control-group">
+                                        <label class="control-label">用户名</label>
+                                        <div class="controls">
+                                            <input type="text" name="username">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">密码</label>
+                                        <div class="controls">
+                                            <input type="password" name="password">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">是否开启</label>
+                                        <div class="controls">
+                                            <label><input type="radio" name="status" value="1" checked="checked"> 开启</label>
+                                            <label><input type="radio" name="status" value="0"> 关闭</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">所属角色</label>
+                                        <div class="controls">
+                                        <volist name="list" id="v">
+                                        <input type="checkbox" name="role_id[]" value="{$v['id']}" >{$v.name}({$v.remark})&nbsp;&nbsp;&nbsp;
+                                        </volist>	
+                                        </div>
+                                    </div>
+                               <div class="form-actions">
+                               <button class="btn btn-primary" type="submit">保存</button>
+                           </div>
+                     </form>
+          </div>
+        </div>
+</block>

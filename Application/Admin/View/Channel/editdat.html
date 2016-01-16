@@ -1,0 +1,135 @@
+<extend name="Public/base"/>
+<block name="body">
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+        window.UEDITOR_HOME_URL='__PUBLIC__/ueditor/';
+        window.onload=function(){
+            window.UEDITOR_CONFIG.imageUrl = '{:U('Editor')}';
+            window.UEDITOR_CONFIG.imagePath = '__ROOT__/Uploads/Editor/';    
+        }
+</script>
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+              <a class="btn"  href="javascript:history.go(-1);">返回</a>
+             </div>
+           </div>
+          <div class="widget-content">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">基础属性</a></li>
+              <li class=""><a href="#tab2" data-toggle="tab">SEO属性</a></li>
+            </ul>
+             <form class="form-horizontal" method="post" action="{:U('Add',array('modelId'=>($modelId),'isChannel'=>($isChannel)))}">
+            <div class="widget-content tab-content">
+            <!--基础属性-->
+            <div class="tab-pane active" id="tab1">
+            <volist name="fields" id="field">
+                <switch name="field.type">
+                 <case value="channel_id">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                          <select name="{$field.field}">
+                              <option value="">请选择栏目</option>
+                              <volist name=":parse_field_attr($field['extra'])" id="vo">
+                                  <option value="{$key}" <eq name="field.value" value="$key" >selected</eq>>{$vo}</option>
+                              </volist>
+                          </select>
+                      </div>
+                    </div>
+                 </case>
+                 <case value="num">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                        <input type="text" placeholder="First name" name="{$field.field}" class="span{$field.text_size}">
+                      </div>
+                    </div>
+                </case>
+                <case value="string">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                        <input type="text" placeholder="First name" name="{$field.field}" class="span{$field.text_size}">
+                      </div>
+                    </div>
+                </case>
+                <case value="textarea">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                        <textarea name="{$field.field}"  class="span{$field.text_size}">{$field.value}</textarea>
+                      </div>
+                    </div>
+                </case>
+                <case value="datetime">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                       <input type="text" name="{$field.field}" class="text input-large time" value="" placeholder="请选择时间" />
+                      </div>
+                    </div>
+                </case>
+                <case value="radio">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                        <volist name=":parse_field_attr($field['extra'])" id="vo">
+                          <label class="radio">
+                               <input type="radio" value="{$key}" <eq name="field.value" value="$key">checked</eq> name="{$field.name}">{$vo}
+                        </label>
+                        </span>
+                     </volist>
+                      </div>
+                    </div>
+                </case>
+                <case value="checkbox">
+                <div class="control-group">
+                    <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                        <volist name=":parse_field_attr($field['extra'])" id="vo">
+                          <label class="checkbox">
+                              <input type="checkbox" value="{$key}" name="{$field.name}" <eq name="field.value" value="$key">checked</eq>>{$vo}
+                        </label>
+                        </span>
+                     </volist>
+                      </div>
+                   </div>
+                </case>
+                <case value="editor">
+                    <div class="control-group">
+                      <label class="control-label">{$field.name} :</label>
+                      <div class="controls">
+                       <script type="text/javascript">
+                              UE.getEditor('{$field.field}');
+                        </script>
+                        <textarea name="{$field.field}" id="{$field.field}">{$field.value}</textarea>             
+                      </div>
+                    </div>
+                </case>
+                <default/>
+                </switch>
+                </volist>
+            </div>
+            <!--基础属性-->
+            <!--SEO属性-->
+            <div class="tab-pane" id="tab2">
+
+            </div>
+            <!--SEO属性-->
+
+          </div>
+              <div class="form-actions">
+                <!--获取模型ID-->
+                <input type="hidden" name="model_id" value="{$modelId}">
+                <input type="hidden" name="is_channel" value="{$isChannel}">
+                <button class="btn btn-success" type="submit">保存</button>
+              </div>
+          </form>
+          </div>
+        </div>
+
+</block>

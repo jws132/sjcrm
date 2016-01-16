@@ -1,0 +1,35 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+
+class MessageController extends IndexController {
+
+
+
+    public function index(){
+        $count = M('Message')->where(array('status'=>1))->count();
+        $Page  = new  \Think\Page($count, 5);// 实例化分页类 传入总记录数（这是根据@979137的意见修改的，这个建议非常好！）
+        $show  = $Page->show();// 分页显示输出
+        $list  = M('Message')->where(array('status'=>1))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);// 赋值数据集
+        $this->assign('page',$show);// 赋值分页输出
+        $this->display();
+    }
+
+    public function guestbook(){
+        if(IS_POST){
+            $result=D('Message')->addInfo();
+            if($result){
+              echo json_encode(array("status" => 1));
+            }else{
+              echo json_encode(array("status" => 0));
+            }
+        }
+    }
+
+
+    public function verify(){
+        $Verify = new \Think\Verify();
+        $Verify->entry();
+    }
+}

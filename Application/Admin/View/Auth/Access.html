@@ -1,0 +1,45 @@
+<extend name="Public/Base"/>
+<block name="body">
+<script type="text/javascript">
+$(function(){
+    $('input[level=1]').click(function(){
+       
+        var inputs=$(this).parents('.widget-box').find('input');
+        $(this).attr('checked') ? inputs.attr('checked','checked') : inputs.removeAttr('checked');
+    })
+
+    $('input[level=2]').click(function(){
+        var inputs=$(this).parents('.update-done').find('input');
+        $(this).attr('checked') ? inputs.attr('checked','checked') : inputs.removeAttr('checked');
+    })
+
+})
+</script>
+<style>
+     .h2 { height:13px;}
+     input[type="checkbox"]{margin-top: -2px; margin-right: 3px;}
+    .update-done{ line-height: 30px;}
+</style>
+&nbsp;&nbsp;
+<form action="{:U('Admin/Auth/addAccess')}" method="post">
+<volist name="list" id="vo">
+    <div class="widget-box clearfix">
+        <div class="widget-title bg_lo"> <span class="icon"> <i class="icon-chevron-down"></i> </span>
+            <h5 class="h2"><input type="checkbox" name="access[]" value="{$vo.id}_1" level="1" <if condition="$vo['access']">checked="checked"</if> />{$vo.title}</h5>
+        </div>
+        <volist name="vo.child" id="ac">
+        <div class="widget-content nopadding updates in collapse" style="height: auto;">
+            <div class="new-update clearfix">
+                  <div class="update-done">
+                      <strong><input type="checkbox" name="access[]" value="{$ac.id}_2" level="2" <if condition="$ac['access']">checked="checked"</if> />{$ac.title}</strong>
+                      <span><volist name="ac.child" id="f"><input type="checkbox" name="access[]" value="{$f.id}_3" <if condition="$f['access']">checked="checked"</if> />{$f.title}&nbsp;&nbsp;&nbsp;</volist></span>     
+                  </div>
+            </div>
+        </div>
+        </volist>
+    </div>
+</volist>
+<input type="hidden" name="rid" value="{$rid}">
+<input type="submit" class="btn btn-primary" value="保存">
+</form>
+</block>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JwsCms内容管理系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__CSS__/style.css" />
+<style>
+.content_view{width:100%;height:100%;font-size:12px;}
+.content_view td{padding-top:5px;padding-bottom:5px;}
+.content_view td.upic{border-left:#eee 1px solid;text-align:center;}
+.content_view td.upic img{cursor:pointer;width:150px;height:150px;}
+</style>
+<script src="__STATIC__/js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+        window.UEDITOR_HOME_URL='__PUBLIC__/ueditor/';
+        window.onload=function(){
+            window.UEDITOR_CONFIG.imageUrl = '{:U('Editor')}';
+            window.UEDITOR_CONFIG.imagePath = '__ROOT__/Uploads/Editor/';    
+        }
+        
+         /**function gradeChange(){
+         var objS = document.getElementById("selectId");
+         var typeid = objS.options[objS.selectedIndex].typeid;
+         alert(typeid);
+        }**/
+
+        $(function(){
+            var selectId=$("select[name=pid] option[selected]").attr('typeid');
+            $('#type').val(selectId);
+
+            $("#selectId").change(function(){
+                var type=$(this).find('option:selected').attr('typeid');
+                $('#type').val(type); 
+            });
+
+
+          $(".itab li").click(function(){
+            $(this).addClass('selected').siblings().removeClass('selected');
+            $(".content_view").eq($(".itab li").index(this)).addClass('selected').siblings().removeClass('selected');
+          });
+
+        });
+
+
+</script>
+
+</head>
+<body>
+  
+  <div class="place"><span>位置：</span><ul class="placeul"><li><a href="#">首页</a></li><li><a href="#">表单</a></li></ul></div>
+     <div class="formbody">
+  <form action="{:U('Edit')}" method="post">  
+  <div id="usual1" class="usual"> 
+    <ul class="itab"> 
+      <li class="selected">基础信息</li> 
+      <li>扩展信息</li> 
+    </ul>
+        <table cellspacing="0" width="100%" class="content_view tab selected">
+  <tbody><tr>
+    <td>选择栏目</td>
+    <td colspan="4">
+    <select name="category"  class="dfinput">
+      <volist name="channelList" id="vo">
+        <option value="{$vo.id}" <if condition="$info['category'] eq $vo['id']">selected</if> >{$vo.title}</option>
+      </volist>
+    </select>
+    </td>
+    <td rowspan="4" class="upic">
+    <img src="http://www.fjlzcy.com/data/attachment/image/20130114/20130114063533_32175.jpg" onclick="uploadpic(this,'thumb')" width="150" id="imgthumb"><input type="hidden" name="thumb" id="thumb" value="data/attachment/image/20130114/20130114063533_32175.jpg"><br><input type="button" class="btn" onclick="unsetThumb('thumb','imgthumb')" value="取消图片"> 
+    </td>
+  </tr>
+  <tr>
+    <td>标题</td>
+    <td colspan="4"><input type="text" name="title" class="dfinput" value="{$info.title}">
+      <a class="selectcolor colorpicker" onclick="colorpicker(this,'color','title')">&nbsp;</a>
+      <input type="hidden" name="color" id="color" value="#cc0099">
+      <input type="checkbox" id="isbold" name="isbold" value="1">加粗</td>
+  </tr>
+  <tr>
+    <td>关键词</td>
+    <td colspan="4"><input type="text" name="keywords" class="dfinput"  value="{$info.keywords}"></td></tr>
+  <tr>
+    <td>描述</td>
+    <td colspan="4"><textarea class="dftext" name="description" style="width:82%; height:60px;" >{$info.description}</textarea></td></tr>
+  <tr>
+    <td>内容</td>
+    <td colspan="5">
+      <script type="text/javascript">
+                                                  UE.getEditor('content');
+                                            </script>
+                                            <textarea name="content" id="content" style="height:400px; width:82%;">{$info.content}</textarea>
+
+    </td></tr>
+  <tr>
+    <td>推荐位置</td>
+    <td colspan="4">
+    <volist name="recommendList" id="vo">
+       <input type="checkbox" name="recommend[]" value="{$vo.id}"  <if condition="in_array($info['recommend']) eq 1"> checked="checked" </if> > {$vo.title}
+    </volist>
+    </td>
+  </tr>
+  <tr>
+    <td>标签</td>
+    <td colspan="5"><input type="text" name="tags" id="tags" size="80" class="dfinput" value="{$info.tags}">以逗号来分割关键词</td></tr>
+  <tr>
+    <td>顺序</td>
+    <td><input type="text" name="sort" value="{$info.sort}" class="dfinput"></td>
+  </tr>
+    <tr>
+    <td>状态</td>
+    <td colspan="3">
+            <input type="radio" name="status" value="1"  <if condition="$info['status'] eq 1"> checked="checked" </if> > 开启&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="status" value="0" <if condition="$info['status'] eq 0"> checked="checked" </if>> 关闭
+          </td>
+  </tr>
+      <tr><td></td><td colspan="3"><input type="hidden" name="id" value="{$info.id}"><button class="btn btn-primary" type="submit">保存</button></td>
+  </tr>
+  </tbody></table>
+
+   <table cellspacing="0" width="100%" class="content_view tab">
+  <tbody>
+
+  <tr>
+    <td width="70">来源</td>
+    <td><input type="text" name="copyfrom" class="dfinput" value="{$info.copyfrom}"></td>
+  </tr>
+  <tr>
+    <td>来源URL</td>
+    <td colspan="3"><input type="text" name="fromlink" class="dfinput" value="{$info.fromlink}"></td>
+  </tr>
+ <tr>
+    <td>访问量</td>
+    <td><input type="text" name="hits"  class="dfinput" value="{$info.hits}"></td>
+  </tr>
+
+  <tr>
+    <td>发布时间</td>
+    <td><input type="text" name="puttime"  readonly="" onclick="WdatePicker({doubleCalendar:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})" class="dfinput" value="2015-08-20 09:52:25"></td
+  </tr>
+  <tr>
+    <td>模板文件</td>
+    <td><input type="text" name="tpl" id="tpl" class="dfinput" value=""></td>
+  </tr>
+  </tbody></table>
+
+
+    </div>
+
+
+
+
+
+ </form> 
+  </div>
+  </body>
+  </html>

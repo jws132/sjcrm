@@ -1,0 +1,48 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="page-ban" style=" background:url('__IMG__/hj.png') #0686CF no-repeat center top;"></div>
+<volist name="channel" id="vo" mod="2" >
+  <div class="{$mod==0?'con-bg':''}">
+       <div class="container pro pt40 pb40">
+          <h2>{$vo.title}</h2>
+            <div class="clearfix pt30">
+                <div class="w300 fl"><img src="__ROOT__/Uploads/Images/{$vo.img}"  alt="{$vo.title}"/></div>
+                <div class="w750 fr">
+                  <h3>适合客户：<em>{$vo.name}</em></h3>
+                  <p class="con">{$vo.description}</p>
+                  <div class="con_box">
+                      <h3>平台系列</h3>
+                      <ul class="list pt15">
+                          <foreach name="list" item="l">
+                            <eq name="vo.id" value="$l.channel">
+                               <li><a href="__MODULE__/article/Content/id/{$l.id}">{$l.title}</a></li>
+                            </eq>  
+                          </foreach>
+                      </ul>
+                  </div>
+                </div>
+              
+           </div>
+       </div>
+  </div>
+</volist>
+    <div class="container">
+        <h2 class="title">我们的客户</h2>
+        <div class="case-title">
+            <ul>
+             <jwsthink:article channel="40" name="vo" limit='1'>
+                  <li>{$vo.description}<p class="tr">-----{$vo.title}</p></li>
+             </jwsthink:article>
+            </ul>
+            <span class="case_mark1"></span>
+            <span class="case_mark2"></span>
+        </div>
+        <ul class="case-list clearfix pb20 pt15">
+          <jwsthink:article channel="40" name="kh" limit='12'>
+             <li><img src="__ROOT__/Uploads/Images/{$kh.img}" border="0" height="150" width="150" alt="{$kh.title}" /></li>
+          </jwsthink:article>
+        </ul>
+
+    </div>
+
+</block>

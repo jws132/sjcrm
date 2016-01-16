@@ -1,0 +1,53 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+              <a class="btn btn-mini"  href="{:U('AddLinks')}">新增</a>          
+             </div>
+           </div>
+          <div class="widget-content ">
+          <table class="table table-bordered table-striped with-check">
+                <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>网站名称</td>
+                    <td>URL</td>
+                    <td>发布时间</td>
+                    <td>语言</td>
+                    <td>操作员</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                 <volist name="list" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</td>
+                    <td>{$vo.url}</td>
+                    <td>{$vo.create_time|date='Y-m-d',###}</td>
+                    <td><if condition="$vo['lang'] eq 'zh-cn'"><img src="__IMG__/zh-cn.png"><else/><img src="__IMG__/en-us.png" ></if></td>
+                    <td>{$vo.userId|get_user}</td>
+                    <td><if condition="$vo['status']">开启<else/>关闭</if></td>
+                    <td><a href="{:U('EditLinks',array('id'=>$vo['id']))}">编辑</a> | <a href="{:U('DelLinks',array('id'=>$vo['id']))}">删除</a></td>
+                    </tr>
+                 </volist>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: 蒋文书
+ * Date: 14-12-27
+ * Time: 下午11:27
+ * To change this template use File | Settings | File Templates.
+ */
+
+namespace Admin\Controller;
+use Think\Controller;
+
+
+class SystemController extends CommonController{
+
+    /**
+     * 系统日志管理
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */
+    public function index(){
+        /* 查询条件初始化 */
+        $map = array();
+        $map  = array('status' => 1);
+        $map  = array('type_log' => 1);
+        if(isset($_GET['log'])){
+            $map['type_log']   =   I('log',0);
+        }
+
+        $list = M('system_log')->where($map)->select();
+        $this->assign('log',C('CONFIG_ACTION_LOG'));
+        $this->assign('log_id',I('get.log',1));
+        $this->assign('list', $list);
+        $this->meta_title = '系统日志管理';
+        $this->display();
+    }
+
+
+    /**
+     * 新增设置
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */
+    public function add(){
+        if( M('config')->add($_POST)){
+            $this->success('新增成功！',U('Admin/Config/index'));
+        }
+        $this->meta_title = '新增配置';
+        $this->display();
+    }
+
+    /**
+     * 编辑设置
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */
+    public function edit(){
+        $id=I('id',0,'intval');       
+        if(IS_POST){
+            if(M('config')->save($_POST)){
+              $this->success('更新成功',U('Admin/Config/index'));
+            }else{
+                $this->error('更新失败');
+            }
+        }else{
+            $info=M('config')->field(true)->find($id);
+            if(!$info){
+                $this->error('获取配置信息错误');
+            }
+            $this->assign("info",$info);
+        }
+        $this->meta_title = '编辑配置';
+        $this->display();
+    }
+
+    /**
+     * 删除id设置
+     * @author jiangwenshu <jiangwenshu1990@126.com>
+     */
+    public function del(){
+        $id=I('id',0);
+        if ( empty($id) ) {
+            $this->error('请选择要操作的数据!');
+        }
+        if(M('config')->where(array('id' =>$id ))->delete()){
+            $this->success('删除成功',U('Admin/Config/index'));
+        }else{
+            $this->error('删除失败!');
+        }
+    }
+   
+
+
+}

@@ -1,0 +1,60 @@
+<extend name="Public/Base"/>
+<block name="body">
+<div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$meta_title}</h5>
+             <div class="buttons">
+             <if condition="($level eq 0)">
+              <a class="btn"  href="{:U('Admin/Node/Add',array('pid'=>I('get.pid',0),'level'=>I('get.level',1)))}">添加菜单</a>
+              <elseif condition="($level eq 1)"/>
+              <a class="btn"  href="{:U('Admin/Node/Add',array('pid'=>I('get.pid',0),'level'=>I('get.level',2)))}">添加菜单</a>
+              <elseif condition="($level eq 2)"/>
+              <a class="btn"  href="{:U('Admin/Node/Add',array('pid'=>I('get.pid',0),'level'=>I('get.level',3)))}">添加菜单</a>
+             </if>
+                 
+             </div>
+           </div>
+          <div class="widget-content ">
+            <table class="table table-bordered table-striped with-check">
+                <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>名称</td>
+                    <td>描述</td>
+                    <td>所属</td>
+                    <td>排序</td>
+                    <td>操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                 <volist name="list" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td><a href="{:U('Admin/Node/index',array('pid'=>$vo['id'],'level'=>$vo['level']))}">{$vo.name}</a></td>
+                    <td>{$vo.title}</td>
+                    <td>
+                      <if condition="$vo['level'] eq 1">顶级菜单
+                      <elseif condition="$vo['level'] eq 2">控制器
+                      <elseif condition="$vo['level'] eq 3"/>动作方法</if>
+                    </td>
+                    <td>{$vo.sort}</td>
+                    <td><a href="{:U('Admin/Node/Del',array('id'=>$vo['id']))}">删除</a></td>
+                    </tr>
+                 </volist>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+

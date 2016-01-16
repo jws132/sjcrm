@@ -1,0 +1,28 @@
+<extend name="Public/base"/>
+<block name="body">
+ <div class="clearfix mb10 pt10 main f12">{$Think.lang.T_YPP}: {$Think.lang.T_HOME} >> <empty name="pid">{$Think.lang.T_PRODUCT}<else/>{$Think.lang.T_PRODUCT} >> {$type|pro_list_type} >> {$pid|pro_list_pid}</empty></div>
+<div class="main clearfix pt15">
+	<dl class="meun" style="height:700px;">
+	<volist name="Think.config.PRO_LIST_TYPE" id="newsType" key="k">
+	   <dt>{$newsType}</dt>
+		  <volist name="list" id="l">
+	        <if condition="$l['type'] eq $k">
+	           <dd><a href="/Index/pro/type/{$l.type}/pid/{$l.id}.html">{$l.title}</a></dd>
+	        </if>
+	     </volist>
+	</volist>
+	</dl>
+	 	<div class="fr w730">	   
+	 		<div class="col-title"><empty name="pid">{$Think.lang.T_PRODUCT}<else/>{$pid|pro_list_pid}</empty></div>
+            <ul class="pro_list pt10 pb10">
+                <volist name="proList" id="vo" empty="暂时没有数据">
+                    <li><a href="/Index/prodef/type/{$vo.type}/id/{$vo.id}.html" class="pic"><img src="__ROOT__/Uploads/Editor/{$vo.pic}" width="180" height="150" border="0"></a>{$Think.lang.NAME}：<a href="/Index/prodef/type/{$vo.type}/id/{$vo.id}.html" target="_blank"  title="{$vo.title}">{$vo.title}</a><br>{$Think.lang.ID}：{$vo.number}</li>
+                </volist>
+            </ul>
+             <div class="page">
+               {$page}
+            </div>
+	 	</div>
+ 
+</div>
+</block>

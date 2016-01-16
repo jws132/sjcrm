@@ -1,0 +1,21 @@
+<extend name="Public/base"/>
+<block name="body">
+<div class="main clearfix pt15">	 
+	 	<div class="fl w700">
+	 	    <div class="clearfix mb20 f12">{$Think.lang.T_YPP}: {$Think.lang.T_HOME} >> {$info.title}</div>
+	 		<div class="col-title">{$info.title}</div>
+            <div class="col-conter">{$info.conter|htmlspecialchars_decode}</div>
+	 	</div>
+        <div class="fr w290 pr">
+	 	    <div class="a-m-r">{$Think.lang.T_TECHNICAL_SUPPORT}</div>
+	 		<div class="w250 w-a-bj pt70 ml10 p10">
+	 		   <ul class="about-meun pt5 mb10 f12">
+                     <li><a href="/Index/support/id/2.html">{$Think.lang.T_ID_2|along_type}</a></li>
+                     <li><a href="/Index/support/id/3.html">{$Think.lang.T_ID_3|along_type}</a></li>
+                     <li><a href="/Index/support/id/4.html">{$Think.lang.T_ID_4|along_type}</a></li>
+	 		   </ul>
+               <include file="Public/net" />
+	 		</div>
+	 	</div>  
+</div>
+</block>
